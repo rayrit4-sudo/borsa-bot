@@ -258,6 +258,96 @@
       "news_score": 0.0,
       "long_term_score": 0.3390874897479048,
       "sector": "Consumer Cyclical"
+    },
+    "INDES.IS": {
+      "fundamental_score": 0.5730164237389571,
+      "news_score": 1.0,
+      "long_term_score": 0.15985622162890767,
+      "sector": "Technology"
+    },
+    "RYSAS.IS": {
+      "fundamental_score": 0.2036484563671622,
+      "news_score": 0.0,
+      "long_term_score": 1.0,
+      "sector": "Industrials"
+    },
+    "SELEC.IS": {
+      "fundamental_score": -0.217230555,
+      "news_score": 1.0,
+      "long_term_score": 1.0,
+      "sector": "Healthcare"
+    },
+    "ISGYO.IS": {
+      "fundamental_score": -0.14487999999999998,
+      "news_score": 1.0,
+      "long_term_score": 0.905747185630172,
+      "sector": "Real Estate"
+    },
+    "ASTOR.IS": {
+      "fundamental_score": 0.3115000267857143,
+      "news_score": 0.0,
+      "long_term_score": 1.0,
+      "sector": "Industrials"
+    },
+    "MU": {
+      "fundamental_score": 0.5837218035714286,
+      "news_score": 1.0,
+      "long_term_score": 1.0,
+      "sector": "Technology"
+    },
+    "CVX": {
+      "fundamental_score": 0.5865464743589743,
+      "news_score": 1.0,
+      "long_term_score": 1.0,
+      "sector": "Energy"
+    },
+    "BRK-B": {
+      "fundamental_score": 0.6871244607142858,
+      "news_score": 1.0,
+      "long_term_score": 0.5885182457916671,
+      "sector": "Financial Services"
+    },
+    "ABBV": {
+      "fundamental_score": 0.2660000066666667,
+      "news_score": 1.0,
+      "long_term_score": 1.0,
+      "sector": "Healthcare"
+    },
+    "JPM": {
+      "fundamental_score": 0.7035975520833334,
+      "news_score": 0.0,
+      "long_term_score": 1.0,
+      "sector": "Financial Services"
+    },
+    "COST": {
+      "fundamental_score": 0.14913837535014002,
+      "news_score": 0.6666666666666666,
+      "long_term_score": 0.7384146366123401,
+      "sector": "Consumer Defensive"
+    },
+    "KO": {
+      "fundamental_score": 0.165955481092437,
+      "news_score": 1.0,
+      "long_term_score": 0.5884929927735991,
+      "sector": "Consumer Defensive"
+    },
+    "CRM": {
+      "fundamental_score": 0.27973421812378796,
+      "news_score": 1.0,
+      "long_term_score": -0.1826057797330981,
+      "sector": "Technology"
+    },
+    "WFC": {
+      "fundamental_score": 0.5414167451923076,
+      "news_score": -1.0,
+      "long_term_score": 0.884720471564691,
+      "sector": "Financial Services"
+    },
+    "MA": {
+      "fundamental_score": 0.062267857142857146,
+      "news_score": 1.0,
+      "long_term_score": 0.48435220866655526,
+      "sector": "Financial Services"
     }
   }
 }
