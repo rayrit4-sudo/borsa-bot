@@ -1,0 +1,80 @@
+{
+  "date": "2026-09-10",
+  "discovered": [
+    {
+      "ticker": "MU",
+      "market": "ABD",
+      "composite_score": 0.663
+    },
+    {
+      "ticker": "CVX",
+      "market": "ABD",
+      "composite_score": 0.617
+    },
+    {
+      "ticker": "BRK-B",
+      "market": "ABD",
+      "composite_score": 0.496
+    },
+    {
+      "ticker": "INDES.IS",
+      "market": "BIST",
+      "composite_score": 0.489
+    },
+    {
+      "ticker": "ABBV",
+      "market": "ABD",
+      "composite_score": 0.464
+    },
+    {
+      "ticker": "RYSAS.IS",
+      "market": "BIST",
+      "composite_score": 0.426
+    },
+    {
+      "ticker": "SELEC.IS",
+      "market": "BIST",
+      "composite_score": 0.416
+    },
+    {
+      "ticker": "JPM",
+      "market": "ABD",
+      "composite_score": 0.397
+    },
+    {
+      "ticker": "COST",
+      "market": "ABD",
+      "composite_score": 0.384
+    },
+    {
+      "ticker": "ISGYO.IS",
+      "market": "BIST",
+      "composite_score": 0.369
+    },
+    {
+      "ticker": "ASTOR.IS",
+      "market": "BIST",
+      "composite_score": 0.357
+    },
+    {
+      "ticker": "KO",
+      "market": "ABD",
+      "composite_score": 0.341
+    },
+    {
+      "ticker": "CRM",
+      "market": "ABD",
+      "composite_score": 0.336
+    },
+    {
+      "ticker": "WFC",
+      "market": "ABD",
+      "composite_score": 0.332
+    },
+    {
+      "ticker": "MA",
+      "market": "ABD",
+      "composite_score": 0.305
+    }
+  ]
+}
