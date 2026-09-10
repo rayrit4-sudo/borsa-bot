@@ -1,5 +1,5 @@
 {
-  "cash": 47798.332343316026,
+  "cash": 37205.34306511517,
   "positions": {
     "AKBNK.IS": {
       "qty": 198,
@@ -44,6 +44,17 @@
       "peak_price": 10378.535641900264,
       "cost_basis": 10394.103445363115,
       "opened_at": "2026-09-10T13:44:44"
+    },
+    "NVDA": {
+      "qty": 1,
+      "avg_price": 10577.123592811637,
+      "sector": "Technology",
+      "market": "ABD",
+      "currency": "USD",
+      "entry_native_price": 218.12640380859375,
+      "peak_price": 10577.123592811637,
+      "cost_basis": 10592.989278200854,
+      "opened_at": "2026-09-10T14:14:05"
     }
   },
   "peak_equity": 102267.54052352905,
