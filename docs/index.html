@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Borsa Bot</title>
+<meta name="theme-color" content="#0f172a">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Borsa Bot">
+<link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" href="icon.svg">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<style>
+  :root {
+    --bg: #f4f5f7;
+    --card: #ffffff;
+    --text: #14181f;
+    --text-dim: #6b7280;
+    --border: #e5e7eb;
+    --up: #16a34a;
+    --down: #dc2626;
+    --accent: #2563eb;
+    --pill-bg: #eef1f6;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0b0e14;
+      --card: #151a24;
+      --text: #f2f4f8;
+      --text-dim: #8b95a7;
+      --border: #232a38;
+      --up: #22c55e;
+      --down: #f87171;
+      --accent: #60a5fa;
+      --pill-bg: #1c2331;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    padding: 16px 16px calc(40px + env(safe-area-inset-bottom));
+    padding-top: calc(16px + env(safe-area-inset-top));
+    max-width: 560px;
+    margin: 0 auto;
+  }
+  h1 { font-size: 20px; margin: 0; }
+  .top-row {
+    display: flex; justify-content: space-between; align-items: center;
+    margin-bottom: 16px;
+  }
+  .markets { display: flex; gap: 6px; }
+  .dot-pill {
+    display: flex; align-items: center; gap: 5px;
+    font-size: 12px; color: var(--text-dim);
+    background: var(--pill-bg); border-radius: 20px; padding: 4px 10px;
+  }
+  .dot { width: 7px; height: 7px; border-radius: 50%; background: var(--text-dim); }
+  .dot.on { background: var(--up); box-shadow: 0 0 6px var(--up); }
+  .card {
+    background: var(--card); border: 1px solid var(--border);
+    border-radius: 16px; padding: 18px; margin-bottom: 14px;
+  }
+  .summary .value { font-size: 34px; font-weight: 700; letter-spacing: -0.5px; }
+  .summary .sub { font-size: 13px; color: var(--text-dim); margin-top: 2px; }
+  .summary .return { font-size: 16px; font-weight: 600; margin-top: 8px; }
+  .up { color: var(--up); }
+  .down { color: var(--down); }
+  .stat-row {
+    display: flex; justify-content: space-between;
+    font-size: 13px; color: var(--text-dim); margin-top: 12px;
+    border-top: 1px solid var(--border); padding-top: 10px;
+  }
+  .note {
+    font-size: 13px; color: var(--down); background: color-mix(in srgb, var(--down) 12%, transparent);
+    border-radius: 10px; padding: 8px 12px; margin-bottom: 14px;
+  }
+  h2 { font-size: 14px; color: var(--text-dim); text-transform: uppercase; letter-spacing: 0.5px; margin: 18px 4px 8px; }
+  .position {
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 12px 0; border-bottom: 1px solid var(--border);
+  }
+  .position:last-child { border-bottom: none; }
+  .position .left .ticker { font-weight: 600; font-size: 15px; }
+  .position .left .meta { font-size: 12px; color: var(--text-dim); margin-top: 2px; }
+  .position .right { text-align: right; }
+  .position .right .pct { font-weight: 700; font-size: 15px; }
+  .position .right .price { font-size: 12px; color: var(--text-dim); margin-top: 2px; }
+  .trade {
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 10px 0; border-bottom: 1px solid var(--border); font-size: 13px;
+  }
+  .trade:last-child { border-bottom: none; }
+  .trade .action-buy { color: var(--up); font-weight: 700; }
+  .trade .action-sell { color: var(--down); font-weight: 700; }
+  .trade .ts { color: var(--text-dim); font-size: 11px; }
+  .empty { color: var(--text-dim); font-size: 14px; padding: 10px 0; }
+  footer {
+    text-align: center; font-size: 12px; color: var(--text-dim); margin-top: 24px;
+  }
+  footer a { color: var(--accent); text-decoration: none; }
+  #refreshBtn {
+    background: none; border: none; color: var(--accent); font-size: 13px;
+    padding: 6px 10px; cursor: pointer;
+  }
+  .skeleton { opacity: 0.5; }
+</style>
+</head>
+<body>
+
+<div class="top-row">
+  <h1>📈 Borsa Bot</h1>
+  <div class="markets" id="marketStatus">
+    <div class="dot-pill"><span class="dot" id="dotBist"></span>BIST</div>
+    <div class="dot-pill"><span class="dot" id="dotUs"></span>ABD</div>
+  </div>
+</div>
+
+<div id="noteBox"></div>
+
+<div class="card summary">
+  <div class="value" id="totalValue">—</div>
+  <div class="sub">Nakit: <span id="cash">—</span></div>
+  <div class="return" id="returnPct">—</div>
+  <div class="stat-row">
+    <span>Zirve: <span id="peakEquity">—</span></span>
+    <span>Drawdown: <span id="drawdown">—</span></span>
+  </div>
+  <div class="stat-row">
+    <span id="lastUpdated">—</span>
+    <button id="refreshBtn" onclick="loadAll()">Yenile</button>
+  </div>
+</div>
+
+<h2>Açık Pozisyonlar</h2>
+<div class="card" id="positionsCard">
+  <div class="empty">Yükleniyor…</div>
+</div>
+
+<h2>Son İşlemler</h2>
+<div class="card" id="tradesCard">
+  <div class="empty">Yükleniyor…</div>
+</div>
+
+<footer>
+  <a href="https://github.com/rayrit4-sudo/borsa-bot" target="_blank">GitHub reposu</a> · 15 dakikada bir otomatik güncellenir
+</footer>
+
+<script>
+function fmtMoney(n, currency) {
+  if (n === null || n === undefined) return "—";
+  const symbol = currency === "USD" ? "$" : "₺";
+  return symbol + n.toLocaleString("tr-TR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+}
+
+function fmtPct(n) {
+  if (n === null || n === undefined) return "—";
+  const sign = n > 0 ? "+" : "";
+  return sign + n.toLocaleString("tr-TR", { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + "%";
+}
+
+function pctClass(n) {
+  return n > 0 ? "up" : (n < 0 ? "down" : "");
+}
+
+function relativeTime(iso) {
+  try {
+    const then = new Date(iso);
+    const diffMs = Date.now() - then.getTime();
+    const mins = Math.round(diffMs / 60000);
+    if (mins < 1) return "az önce";
+    if (mins < 60) return mins + " dakika önce";
+    const hours = Math.round(mins / 60);
+    if (hours < 24) return hours + " saat önce";
+    return then.toLocaleString("tr-TR");
+  } catch (e) { return iso; }
+}
+
+async function loadStatus() {
+  const res = await fetch("status.json?t=" + Date.now());
+  if (!res.ok) throw new Error("status.json alınamadı");
+  const s = await res.json();
+
+  document.getElementById("dotBist").classList.toggle("on", !!s.market_status?.bist_open);
+  document.getElementById("dotUs").classList.toggle("on", !!s.market_status?.us_open);
+
+  const noteBox = document.getElementById("noteBox");
+  noteBox.innerHTML = s.note ? `<div class="note">${s.note}</div>` : "";
+
+  document.getElementById("totalValue").textContent = fmtMoney(s.total_value, "TRY");
+  document.getElementById("cash").textContent = fmtMoney(s.cash, "TRY");
+  const retEl = document.getElementById("returnPct");
+  retEl.textContent = fmtPct(s.return_pct) + " getiri";
+  retEl.className = "return " + pctClass(s.return_pct);
+  document.getElementById("peakEquity").textContent = fmtMoney(s.peak_equity, "TRY");
+  const ddEl = document.getElementById("drawdown");
+  ddEl.textContent = fmtPct(s.drawdown_pct);
+  ddEl.className = pctClass(s.drawdown_pct);
+  document.getElementById("lastUpdated").textContent = "Güncelleme: " + relativeTime(s.last_updated);
+
+  const posCard = document.getElementById("positionsCard");
+  const positions = s.positions || [];
+  if (positions.length === 0) {
+    posCard.innerHTML = '<div class="empty">Açık pozisyon yok.</div>';
+  } else {
+    posCard.innerHTML = positions.map(p => {
+      const priceLine = p.currency === "USD" && p.entry_native_price
+        ? `giriş $${p.entry_native_price.toFixed(2)}`
+        : `ort. ${fmtMoney(p.avg_price, "TRY")}`;
+      return `
+        <div class="position">
+          <div class="left">
+            <div class="ticker">${p.ticker}</div>
+            <div class="meta">${p.sector || ""} · ${p.market || ""} · ${p.qty} adet</div>
+          </div>
+          <div class="right">
+            <div class="pct ${pctClass(p.unrealized_pct)}">${fmtPct(p.unrealized_pct)}</div>
+            <div class="price">${priceLine}</div>
+          </div>
+        </div>`;
+    }).join("");
+  }
+}
+
+function parseCsv(text) {
+  const lines = text.trim().split("\n");
+  const header = lines[0].split(",");
+  return lines.slice(1).map(line => {
+    // basit CSV ayrıştırma (alanlarda virgül yok varsayımıyla)
+    const cols = line.split(",");
+    const row = {};
+    header.forEach((h, i) => row[h.trim()] = cols[i]);
+    return row;
+  });
+}
+
+async function loadTrades() {
+  const card = document.getElementById("tradesCard");
+  try {
+    const res = await fetch("trade_log.csv?t=" + Date.now());
+    if (!res.ok) throw new Error("trade_log.csv alınamadı");
+    const text = await res.text();
+    const rows = parseCsv(text).filter(r => r.timestamp).reverse().slice(0, 15);
+    if (rows.length === 0) {
+      card.innerHTML = '<div class="empty">Henüz işlem yok.</div>';
+      return;
+    }
+    card.innerHTML = rows.map(r => {
+      const actionClass = r.action === "BUY" ? "action-buy" : "action-sell";
+      const actionLabel = r.action === "BUY" ? "AL" : "SAT";
+      const pnl = r.pnl ? ` (${r.pnl >= 0 ? "+" : ""}${parseFloat(r.pnl).toLocaleString("tr-TR", {minimumFractionDigits:2, maximumFractionDigits:2})} TL)` : "";
+      return `
+        <div class="trade">
+          <div>
+            <span class="${actionClass}">${actionLabel}</span> ${r.ticker} · ${r.qty} adet${pnl}
+            <div class="ts">${r.timestamp} UTC</div>
+          </div>
+        </div>`;
+    }).join("");
+  } catch (e) {
+    card.innerHTML = '<div class="empty">İşlem geçmişi yüklenemedi.</div>';
+  }
+}
+
+async function loadAll() {
+  try {
+    await loadStatus();
+  } catch (e) {
+    document.getElementById("noteBox").innerHTML = '<div class="note">Durum yüklenemedi. Az sonra tekrar dene.</div>';
+  }
+  await loadTrades();
+}
+
+loadAll();
+setInterval(loadAll, 60000);
+
+if ("serviceWorker" in navigator) {
+  // Basit bir servis çalışanı yok; çevrimdışı önbellekleme şu an gerekli değil.
+}
+</script>
+</body>
+</html>

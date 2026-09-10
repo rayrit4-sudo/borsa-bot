@@ -22,10 +22,11 @@ Gerçek bir aracı kurum API'sine bağlanmadan önce sonuçları uzun süre
 gözlemleyip stratejiyi doğrulaman önerilir.
 """
 
+import json
 import logging
 import os
 import sys
-from datetime import datetime
+from datetime import datetime, timezone
 
 import config
 import market_hours
@@ -65,6 +66,52 @@ logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(me
 log = logging.getLogger(__name__)
 
 
+def write_status(broker: PaperBroker | None, current_prices: dict, open_markets: list[str], note: str | None = None) -> None:
+    """Telefon gösterge paneli (docs/index.html, GitHub Pages) için bir özet
+    dosyası yazar. Her main() çıkış noktasında çağrılır ki panel her zaman
+    en güncel (veya en azından son bilinen) durumu gösterebilsin."""
+    os.makedirs(os.path.dirname(config.STATUS_FILE), exist_ok=True)
+    base = {
+        "last_updated": datetime.now(timezone.utc).isoformat(timespec="seconds"),
+        "market_status": {"bist_open": "BIST" in open_markets, "us_open": "ABD" in open_markets},
+        "note": note,
+    }
+    if broker is None:
+        data = base
+    else:
+        total_value = broker.portfolio_value(current_prices)
+        return_pct = (total_value / config.INITIAL_CASH - 1) * 100
+        drawdown_pct = (total_value / broker.peak_equity - 1) * 100 if broker.peak_equity else 0.0
+        positions = []
+        for ticker, pos in broker.positions.items():
+            price = current_prices.get(ticker, pos["avg_price"])
+            unrealized_pct = (price / pos["avg_price"] - 1) * 100
+            positions.append({
+                "ticker": ticker,
+                "sector": pos.get("sector", "Bilinmiyor"),
+                "market": pos.get("market", "Bilinmiyor"),
+                "currency": pos.get("currency", "TRY"),
+                "qty": pos["qty"],
+                "avg_price": round(pos["avg_price"], 2),
+                "current_price": round(price, 2),
+                "unrealized_pct": round(unrealized_pct, 2),
+                "entry_native_price": pos.get("entry_native_price"),
+            })
+        data = {
+            **base,
+            "cash": round(broker.cash, 2),
+            "total_value": round(total_value, 2),
+            "initial_cash": config.INITIAL_CASH,
+            "return_pct": round(return_pct, 2),
+            "peak_equity": round(broker.peak_equity, 2),
+            "drawdown_pct": round(drawdown_pct, 2),
+            "consecutive_losses": broker.consecutive_losses,
+            "positions": positions,
+        }
+    with open(config.STATUS_FILE, "w", encoding="utf-8") as f:
+        json.dump(data, f, ensure_ascii=False, indent=2)
+
+
 def print_ranking(results: list[dict]) -> None:
     header = (
         f"{'HİSSE':<10}{'PİYASA':<7}{'FİYAT(TL)':>11}{'TEKNİK':>9}{'TEMEL':>8}{'HABER':>8}"
@@ -88,6 +135,7 @@ def main() -> None:
             "açık" if market_hours.is_bist_open() else "kapalı",
             "açık" if market_hours.is_us_open() else "kapalı",
         )
+        write_status(PaperBroker(), {}, open_markets, note="Piyasalar kapalı — fiyatlar güncellenmedi.")
         return
 
     # Çekirdek liste + o günün geniş keşif taramasından (discovery.py) gelen
@@ -116,6 +164,7 @@ def main() -> None:
 
     if not results:
         log.error("Hiçbir hisse için veri alınamadı. İnternet bağlantısını kontrol et.")
+        write_status(PaperBroker(), {}, open_markets, note="Veri alınamadı — fiyatlar güncellenmedi.")
         return
 
     coverage = len(results) / len(watchlist)
@@ -134,6 +183,7 @@ def main() -> None:
                 print(f"  {ticker} [{pos.get('sector', '?')}]: {pos['qty']} adet @ ort. {pos['avg_price']:.2f} TL")
         else:
             print("Açık pozisyon yok.")
+        write_status(broker, {}, open_markets, note="Veri kalitesi yetersiz — fiyatlar güncellenmedi.")
         return
 
     current_prices = {r["ticker"]: r["last_price"] for r in results}
@@ -191,6 +241,7 @@ def main() -> None:
 
     broker.update_peak_equity(current_prices)
     broker.save()
+    write_status(broker, current_prices, open_markets)
 
     print("\n=== PORTFÖY DURUMU ===")
     for line in broker.summary_lines(current_prices):

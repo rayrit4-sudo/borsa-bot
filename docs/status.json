@@ -1,0 +1,72 @@
+{
+  "last_updated": "2026-09-10T20:33:22+00:00",
+  "market_status": {
+    "bist_open": false,
+    "us_open": false
+  },
+  "note": "Piyasalar kapalı — fiyatlar güncellenmedi.",
+  "cash": 37205.34,
+  "total_value": 101252.0,
+  "initial_cash": 100000.0,
+  "return_pct": 1.25,
+  "peak_equity": 102267.54,
+  "drawdown_pct": -0.99,
+  "consecutive_losses": 0,
+  "positions": [
+    {
+      "ticker": "AKBNK.IS",
+      "sector": "Financial Services",
+      "market": "BIST",
+      "currency": "TRY",
+      "qty": 198,
+      "avg_price": 73.0,
+      "current_price": 73.0,
+      "unrealized_pct": 0.0,
+      "entry_native_price": 73.0
+    },
+    {
+      "ticker": "GUBRF.IS",
+      "sector": "Basic Materials",
+      "market": "BIST",
+      "currency": "TRY",
+      "qty": 28,
+      "avg_price": 512.5,
+      "current_price": 512.5,
+      "unrealized_pct": 0.0,
+      "entry_native_price": 512.5
+    },
+    {
+      "ticker": "TAVHL.IS",
+      "sector": "Industrials",
+      "market": "BIST",
+      "currency": "TRY",
+      "qty": 52,
+      "avg_price": 274.75,
+      "current_price": 274.75,
+      "unrealized_pct": 0.0,
+      "entry_native_price": 274.75
+    },
+    {
+      "ticker": "CVX",
+      "sector": "Energy",
+      "market": "ABD",
+      "currency": "USD",
+      "qty": 1,
+      "avg_price": 10378.54,
+      "current_price": 10378.54,
+      "unrealized_pct": 0.0,
+      "entry_native_price": 214.03500366210938
+    },
+    {
+      "ticker": "NVDA",
+      "sector": "Technology",
+      "market": "ABD",
+      "currency": "USD",
+      "qty": 1,
+      "avg_price": 10577.12,
+      "current_price": 10577.12,
+      "unrealized_pct": 0.0,
+      "entry_native_price": 218.12640380859375
+    }
+  ]
+}
