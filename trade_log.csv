@@ -7,3 +7,4 @@ timestamp,action,ticker,qty,price,commission,reason,pnl,cash_after
 2026-09-10T13:48:25,BUY,AKBNK.IS,198,73.0,21.68,AL sinyali (skor 0.45),,86872.39
 2026-09-10T13:48:25,BUY,GUBRF.IS,28,512.5,21.53,AL sinyali (skor 0.40),,72500.87
 2026-09-10T13:48:25,BUY,TAVHL.IS,52,274.75,21.43,AL sinyali (skor 0.38),,58192.44
+2026-09-10T13:44:44,BUY,CVX,1,10378.5356,15.57,AL sinyali (skor 0.49),,47798.33

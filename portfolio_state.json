@@ -1,5 +1,5 @@
 {
-  "cash": 58192.43578867914,
+  "cash": 47798.332343316026,
   "positions": {
     "AKBNK.IS": {
       "qty": 198,
@@ -33,6 +33,17 @@
       "peak_price": 275.0,
       "cost_basis": 14308.4305,
       "opened_at": "2026-09-10T13:48:25"
+    },
+    "CVX": {
+      "qty": 1,
+      "avg_price": 10378.535641900264,
+      "sector": "Energy",
+      "market": "ABD",
+      "currency": "USD",
+      "entry_native_price": 214.03500366210938,
+      "peak_price": 10378.535641900264,
+      "cost_basis": 10394.103445363115,
+      "opened_at": "2026-09-10T13:44:44"
     }
   },
   "peak_equity": 102267.54052352905,
