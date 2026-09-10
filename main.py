@@ -112,6 +112,22 @@ def write_status(broker: PaperBroker | None, current_prices: dict, open_markets:
         json.dump(data, f, ensure_ascii=False, indent=2)
 
 
+def append_history(total_value: float) -> None:
+    """Panel grafiği için portföy değerini zaman damgasıyla biriktirir.
+    Sadece gerçek (taze fiyatlarla hesaplanmış) değerler eklenir."""
+    history = []
+    if os.path.exists(config.HISTORY_FILE):
+        try:
+            with open(config.HISTORY_FILE, "r", encoding="utf-8") as f:
+                history = json.load(f)
+        except Exception:
+            history = []
+    history.append({"t": datetime.now(timezone.utc).isoformat(timespec="seconds"), "v": round(total_value, 2)})
+    history = history[-config.HISTORY_MAX_POINTS:]
+    with open(config.HISTORY_FILE, "w", encoding="utf-8") as f:
+        json.dump(history, f)
+
+
 def print_ranking(results: list[dict]) -> None:
     header = (
         f"{'HİSSE':<10}{'PİYASA':<7}{'FİYAT(TL)':>11}{'TEKNİK':>9}{'TEMEL':>8}{'HABER':>8}"
@@ -242,6 +258,7 @@ def main() -> None:
     broker.update_peak_equity(current_prices)
     broker.save()
     write_status(broker, current_prices, open_markets)
+    append_history(broker.portfolio_value(current_prices))
 
     print("\n=== PORTFÖY DURUMU ===")
     for line in broker.summary_lines(current_prices):

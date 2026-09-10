@@ -166,6 +166,8 @@ CONSECUTIVE_FAILURE_ABORT_LIMIT = 8
 STATE_FILE = "portfolio_state.json"
 TRADE_LOG_FILE = "docs/trade_log.csv"  # telefon paneli (GitHub Pages) bu klasoru yayinliyor
 STATUS_FILE = "docs/status.json"  # telefon gösterge paneli (GitHub Pages) bunu okur
+HISTORY_FILE = "docs/history.json"  # panel grafiği için portföy değeri geçmişi
+HISTORY_MAX_POINTS = 500
 
 # --- Haber duyarlılığı ---
 NEWS_LOOKBACK_COUNT = 12      # ticker başına kontrol edilecek haber başlığı sayısı
