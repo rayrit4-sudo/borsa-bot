@@ -1,0 +1,6 @@
+timestamp,action,ticker,qty,price,reason,pnl,cash_after
+2026-09-06T22:35:43,BUY,AKBNK.IS,250,71.85,AL sinyali (skor 0.71),,82037.5
+2026-09-06T22:35:43,BUY,GARAN.IS,112,131.4,AL sinyali (skor 0.50),,67320.7
+2026-09-06T22:35:43,BUY,ENJSA.IS,106,113.7,AL sinyali (skor 0.48),,55268.5
+2026-09-06T22:35:43,BUY,SAHOL.IS,107,92.6,AL sinyali (skor 0.47),,45360.3
+2026-09-06T22:35:43,BUY,YKBNK.IS,227,35.9,AL sinyali (skor 0.47),,37211.0

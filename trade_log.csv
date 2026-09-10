@@ -1,0 +1,9 @@
+timestamp,action,ticker,qty,price,commission,reason,pnl,cash_after
+2026-09-10T13:46:37,SELL,AKBNK.IS,250,72.9,27.34,manuel tasfiye - yeni gun ici sisteme gecis,235.16,55408.66
+2026-09-10T13:46:45,SELL,GARAN.IS,112,135.1,22.7,manuel tasfiye - yeni gun ici sisteme gecis,391.7,70517.17
+2026-09-10T13:46:53,SELL,ENJSA.IS,106,116.6,18.54,manuel tasfiye - yeni gun ici sisteme gecis,288.86,82858.23
+2026-09-10T13:47:01,SELL,SAHOL.IS,107,95.5,15.33,manuel tasfiye - yeni gun ici sisteme gecis,294.97,93061.4
+2026-09-10T13:47:11,SELL,YKBNK.IS,227,36.56,12.45,manuel tasfiye - yeni gun ici sisteme gecis,137.37,101348.07
+2026-09-10T13:48:25,BUY,AKBNK.IS,198,73.0,21.68,AL sinyali (skor 0.45),,86872.39
+2026-09-10T13:48:25,BUY,GUBRF.IS,28,512.5,21.53,AL sinyali (skor 0.40),,72500.87
+2026-09-10T13:48:25,BUY,TAVHL.IS,52,274.75,21.43,AL sinyali (skor 0.38),,58192.44
