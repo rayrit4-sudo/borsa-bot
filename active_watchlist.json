@@ -1,35 +1,40 @@
 {
-  "date": "2026-09-10",
+  "date": "2026-09-11",
   "discovered": [
-    {
-      "ticker": "MU",
-      "market": "ABD",
-      "composite_score": 0.663
-    },
     {
       "ticker": "CVX",
       "market": "ABD",
-      "composite_score": 0.617
+      "composite_score": 0.626
     },
     {
-      "ticker": "BRK-B",
+      "ticker": "MU",
       "market": "ABD",
-      "composite_score": 0.496
+      "composite_score": 0.548
     },
     {
       "ticker": "INDES.IS",
       "market": "BIST",
-      "composite_score": 0.489
+      "composite_score": 0.488
+    },
+    {
+      "ticker": "LLY",
+      "market": "ABD",
+      "composite_score": 0.487
+    },
+    {
+      "ticker": "ORCL",
+      "market": "ABD",
+      "composite_score": 0.467
     },
     {
       "ticker": "ABBV",
       "market": "ABD",
-      "composite_score": 0.464
+      "composite_score": 0.438
     },
     {
       "ticker": "RYSAS.IS",
       "market": "BIST",
-      "composite_score": 0.426
+      "composite_score": 0.43
     },
     {
       "ticker": "SELEC.IS",
@@ -37,44 +42,39 @@
       "composite_score": 0.416
     },
     {
-      "ticker": "JPM",
-      "market": "ABD",
-      "composite_score": 0.397
+      "ticker": "ASTOR.IS",
+      "market": "BIST",
+      "composite_score": 0.414
     },
     {
-      "ticker": "COST",
+      "ticker": "JPM",
       "market": "ABD",
-      "composite_score": 0.384
+      "composite_score": 0.405
     },
     {
       "ticker": "ISGYO.IS",
       "market": "BIST",
-      "composite_score": 0.369
-    },
-    {
-      "ticker": "ASTOR.IS",
-      "market": "BIST",
-      "composite_score": 0.357
+      "composite_score": 0.403
     },
     {
       "ticker": "KO",
       "market": "ABD",
-      "composite_score": 0.341
-    },
-    {
-      "ticker": "CRM",
-      "market": "ABD",
-      "composite_score": 0.336
+      "composite_score": 0.333
     },
     {
       "ticker": "WFC",
       "market": "ABD",
-      "composite_score": 0.332
+      "composite_score": 0.328
     },
     {
-      "ticker": "MA",
+      "ticker": "TXN",
       "market": "ABD",
-      "composite_score": 0.305
+      "composite_score": 0.316
+    },
+    {
+      "ticker": "NETAS.IS",
+      "market": "BIST",
+      "composite_score": 0.312
     }
   ]
 }
