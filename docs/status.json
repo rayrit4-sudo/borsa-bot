@@ -1,16 +1,16 @@
 {
-  "last_updated": "2026-09-14T15:55:42+00:00",
+  "last_updated": "2026-09-14T16:11:35+00:00",
   "market_status": {
     "bist_open": false,
     "us_open": true
   },
   "note": null,
   "cash": 37205.34,
-  "total_value": 101035.04,
+  "total_value": 101016.2,
   "initial_cash": 100000.0,
-  "return_pct": 1.04,
+  "return_pct": 1.02,
   "peak_equity": 102267.54,
-  "drawdown_pct": -1.21,
+  "drawdown_pct": -1.22,
   "consecutive_losses": 0,
   "positions": [
     {
@@ -53,8 +53,8 @@
       "currency": "USD",
       "qty": 1,
       "avg_price": 10378.54,
-      "current_price": 10435.1,
-      "unrealized_pct": 0.55,
+      "current_price": 10422.88,
+      "unrealized_pct": 0.43,
       "entry_native_price": 214.03500366210938
     },
     {
@@ -64,8 +64,8 @@
       "currency": "USD",
       "qty": 1,
       "avg_price": 10577.12,
-      "current_price": 10303.59,
-      "unrealized_pct": -2.59,
+      "current_price": 10296.97,
+      "unrealized_pct": -2.65,
       "entry_native_price": 218.12640380859375
     }
   ]
