@@ -9,3 +9,5 @@ timestamp,action,ticker,qty,price,commission,reason,pnl,cash_after
 2026-09-10T13:48:25,BUY,TAVHL.IS,52,274.75,21.43,AL sinyali (skor 0.38),,58192.44
 2026-09-10T13:44:44,BUY,CVX,1,10378.5356,15.57,AL sinyali (skor 0.49),,47798.33
 2026-09-10T14:14:05,BUY,NVDA,1,10577.1236,15.87,AL sinyali (skor 0.36),,37205.34
+2026-09-15T08:15:14,SELL,GUBRF.IS,28,470.25,19.75,stop-loss (-8.2%),-1224.28,50352.59
+2026-09-15T08:15:14,BUY,TUPRS.IS,34,409.0,20.86,AL sinyali (skor 0.59),,36425.73

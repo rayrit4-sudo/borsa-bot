@@ -1,5 +1,5 @@
 {
-  "cash": 37205.34306511517,
+  "cash": 36425.733565115166,
   "positions": {
     "AKBNK.IS": {
       "qty": 198,
@@ -10,17 +10,6 @@
       "entry_native_price": 73.0,
       "peak_price": 73.5,
       "cost_basis": 14475.681,
-      "opened_at": "2026-09-10T13:48:25"
-    },
-    "GUBRF.IS": {
-      "qty": 28,
-      "avg_price": 512.5,
-      "sector": "Basic Materials",
-      "market": "BIST",
-      "currency": "TRY",
-      "entry_native_price": 512.5,
-      "peak_price": 512.5,
-      "cost_basis": 14371.525,
       "opened_at": "2026-09-10T13:48:25"
     },
     "TAVHL.IS": {
@@ -55,8 +44,19 @@
       "peak_price": 10777.063062482106,
       "cost_basis": 10592.989278200854,
       "opened_at": "2026-09-10T14:14:05"
+    },
+    "TUPRS.IS": {
+      "qty": 34,
+      "avg_price": 409.0,
+      "sector": "Energy",
+      "market": "BIST",
+      "currency": "TRY",
+      "entry_native_price": 409.0,
+      "peak_price": 409.0,
+      "cost_basis": 13926.859,
+      "opened_at": "2026-09-15T08:15:14"
     }
   },
   "peak_equity": 102267.54052352905,
-  "consecutive_losses": 0
+  "consecutive_losses": 1
 }

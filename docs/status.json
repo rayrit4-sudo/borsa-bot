@@ -1,17 +1,17 @@
 {
-  "last_updated": "2026-09-15T07:57:00+00:00",
+  "last_updated": "2026-09-15T08:15:14+00:00",
   "market_status": {
     "bist_open": true,
     "us_open": false
   },
   "note": null,
-  "cash": 37205.34,
-  "total_value": 99746.7,
+  "cash": 36425.73,
+  "total_value": 99297.39,
   "initial_cash": 100000.0,
-  "return_pct": -0.25,
+  "return_pct": -0.7,
   "peak_equity": 102267.54,
-  "drawdown_pct": -2.46,
-  "consecutive_losses": 0,
+  "drawdown_pct": -2.9,
+  "consecutive_losses": 1,
   "positions": [
     {
       "ticker": "AKBNK.IS",
@@ -20,20 +20,9 @@
       "currency": "TRY",
       "qty": 198,
       "avg_price": 73.0,
-      "current_price": 72.65,
-      "unrealized_pct": -0.48,
+      "current_price": 72.0,
+      "unrealized_pct": -1.37,
       "entry_native_price": 73.0
-    },
-    {
-      "ticker": "GUBRF.IS",
-      "sector": "Basic Materials",
-      "market": "BIST",
-      "currency": "TRY",
-      "qty": 28,
-      "avg_price": 512.5,
-      "current_price": 477.0,
-      "unrealized_pct": -6.93,
-      "entry_native_price": 512.5
     },
     {
       "ticker": "TAVHL.IS",
@@ -42,8 +31,8 @@
       "currency": "TRY",
       "qty": 52,
       "avg_price": 274.75,
-      "current_price": 266.25,
-      "unrealized_pct": -3.09,
+      "current_price": 264.5,
+      "unrealized_pct": -3.73,
       "entry_native_price": 274.75
     },
     {
@@ -67,6 +56,17 @@
       "current_price": 10577.12,
       "unrealized_pct": 0.0,
       "entry_native_price": 218.12640380859375
+    },
+    {
+      "ticker": "TUPRS.IS",
+      "sector": "Energy",
+      "market": "BIST",
+      "currency": "TRY",
+      "qty": 34,
+      "avg_price": 409.0,
+      "current_price": 409.0,
+      "unrealized_pct": 0.0,
+      "entry_native_price": 409.0
     }
   ]
 }
