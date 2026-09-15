@@ -1,15 +1,10 @@
 {
-  "date": "2026-09-14",
+  "date": "2026-09-15",
   "discovered": [
     {
-      "ticker": "CVX",
+      "ticker": "BRK-B",
       "market": "ABD",
-      "composite_score": 0.619
-    },
-    {
-      "ticker": "MU",
-      "market": "ABD",
-      "composite_score": 0.602
+      "composite_score": 0.6
     },
     {
       "ticker": "JPM",
@@ -17,14 +12,9 @@
       "composite_score": 0.536
     },
     {
-      "ticker": "ORCL",
+      "ticker": "CVX",
       "market": "ABD",
-      "composite_score": 0.512
-    },
-    {
-      "ticker": "AVGO",
-      "market": "ABD",
-      "composite_score": 0.463
+      "composite_score": 0.492
     },
     {
       "ticker": "MPARK.IS",
@@ -32,24 +22,24 @@
       "composite_score": 0.446
     },
     {
-      "ticker": "SELEC.IS",
-      "market": "BIST",
-      "composite_score": 0.427
+      "ticker": "MU",
+      "market": "ABD",
+      "composite_score": 0.438
     },
     {
-      "ticker": "ABBV",
+      "ticker": "CAT",
       "market": "ABD",
-      "composite_score": 0.426
+      "composite_score": 0.409
     },
     {
       "ticker": "ISDMR.IS",
       "market": "BIST",
-      "composite_score": 0.404
+      "composite_score": 0.406
     },
     {
       "ticker": "ASTOR.IS",
       "market": "BIST",
-      "composite_score": 0.389
+      "composite_score": 0.392
     },
     {
       "ticker": "AKCNS.IS",
@@ -59,22 +49,32 @@
     {
       "ticker": "PANW",
       "market": "ABD",
-      "composite_score": 0.381
+      "composite_score": 0.348
     },
     {
-      "ticker": "LMT",
+      "ticker": "WFC",
       "market": "ABD",
-      "composite_score": 0.355
+      "composite_score": 0.343
+    },
+    {
+      "ticker": "CLEBI.IS",
+      "market": "BIST",
+      "composite_score": 0.34
     },
     {
       "ticker": "ECILC.IS",
       "market": "BIST",
-      "composite_score": 0.331
+      "composite_score": 0.336
     },
     {
-      "ticker": "V",
-      "market": "ABD",
-      "composite_score": 0.322
+      "ticker": "SELEC.IS",
+      "market": "BIST",
+      "composite_score": 0.329
+    },
+    {
+      "ticker": "EKGYO.IS",
+      "market": "BIST",
+      "composite_score": 0.3
     }
   ]
 }
