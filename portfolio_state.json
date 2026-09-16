@@ -1,17 +1,6 @@
 {
-  "cash": 35874.76581511516,
+  "cash": 42445.49781177349,
   "positions": {
-    "AKBNK.IS": {
-      "qty": 198,
-      "avg_price": 73.0,
-      "sector": "Financial Services",
-      "market": "BIST",
-      "currency": "TRY",
-      "entry_native_price": 73.0,
-      "peak_price": 73.5,
-      "cost_basis": 14475.681,
-      "opened_at": "2026-09-10T13:48:25"
-    },
     "CVX": {
       "qty": 1,
       "avg_price": 10378.535641900264,
@@ -55,8 +44,19 @@
       "peak_price": 416.5,
       "cost_basis": 13765.11675,
       "opened_at": "2026-09-16T07:31:30"
+    },
+    "ASELS.IS": {
+      "qty": 18,
+      "avg_price": 369.75,
+      "sector": "Industrials",
+      "market": "BIST",
+      "currency": "TRY",
+      "entry_native_price": 369.75,
+      "peak_price": 369.75,
+      "cost_basis": 6665.48325,
+      "opened_at": "2026-09-16T07:53:37"
     }
   },
   "peak_equity": 102267.54052352905,
-  "consecutive_losses": 2
+  "consecutive_losses": 3
 }

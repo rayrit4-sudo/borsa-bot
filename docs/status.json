@@ -1,29 +1,18 @@
 {
-  "last_updated": "2026-09-16T07:31:30+00:00",
+  "last_updated": "2026-09-16T07:53:37+00:00",
   "market_status": {
     "bist_open": true,
     "us_open": false
   },
   "note": null,
-  "cash": 35874.77,
-  "total_value": 97980.22,
+  "cash": 42445.5,
+  "total_value": 97348.16,
   "initial_cash": 100000.0,
-  "return_pct": -2.02,
+  "return_pct": -2.65,
   "peak_equity": 102267.54,
-  "drawdown_pct": -4.19,
-  "consecutive_losses": 2,
+  "drawdown_pct": -4.81,
+  "consecutive_losses": 3,
   "positions": [
-    {
-      "ticker": "AKBNK.IS",
-      "sector": "Financial Services",
-      "market": "BIST",
-      "currency": "TRY",
-      "qty": 198,
-      "avg_price": 73.0,
-      "current_price": 68.35,
-      "unrealized_pct": -6.37,
-      "entry_native_price": 73.0
-    },
     {
       "ticker": "CVX",
       "sector": "Energy",
@@ -53,8 +42,8 @@
       "currency": "TRY",
       "qty": 34,
       "avg_price": 409.0,
-      "current_price": 408.0,
-      "unrealized_pct": -0.24,
+      "current_price": 404.75,
+      "unrealized_pct": -1.04,
       "entry_native_price": 409.0
     },
     {
@@ -64,9 +53,20 @@
       "currency": "TRY",
       "qty": 33,
       "avg_price": 416.5,
-      "current_price": 416.5,
-      "unrealized_pct": 0.0,
+      "current_price": 410.0,
+      "unrealized_pct": -1.56,
       "entry_native_price": 416.5
+    },
+    {
+      "ticker": "ASELS.IS",
+      "sector": "Industrials",
+      "market": "BIST",
+      "currency": "TRY",
+      "qty": 18,
+      "avg_price": 369.75,
+      "current_price": 369.75,
+      "unrealized_pct": 0.0,
+      "entry_native_price": 369.75
     }
   ]
 }

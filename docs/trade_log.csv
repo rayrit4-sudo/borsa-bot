@@ -13,3 +13,5 @@ timestamp,action,ticker,qty,price,commission,reason,pnl,cash_after
 2026-09-15T08:15:14,BUY,TUPRS.IS,34,409.0,20.86,AL sinyali (skor 0.59),,36425.73
 2026-09-16T07:31:30,SELL,TAVHL.IS,52,254.5,19.85,stop-loss (-7.4%),-1094.28,49639.88
 2026-09-16T07:31:30,BUY,BIMAS.IS,33,416.5,20.62,AL sinyali (skor 0.46),,35874.77
+2026-09-16T07:53:37,SELL,AKBNK.IS,198,66.95,19.88,stop-loss (-8.3%),-1239.47,49110.98
+2026-09-16T07:53:37,BUY,ASELS.IS,18,369.75,9.98,AL sinyali (skor 0.54),,42445.5
