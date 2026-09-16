@@ -11,3 +11,5 @@ timestamp,action,ticker,qty,price,commission,reason,pnl,cash_after
 2026-09-10T14:14:05,BUY,NVDA,1,10577.1236,15.87,AL sinyali (skor 0.36),,37205.34
 2026-09-15T08:15:14,SELL,GUBRF.IS,28,470.25,19.75,stop-loss (-8.2%),-1224.28,50352.59
 2026-09-15T08:15:14,BUY,TUPRS.IS,34,409.0,20.86,AL sinyali (skor 0.59),,36425.73
+2026-09-16T07:31:30,SELL,TAVHL.IS,52,254.5,19.85,stop-loss (-7.4%),-1094.28,49639.88
+2026-09-16T07:31:30,BUY,BIMAS.IS,33,416.5,20.62,AL sinyali (skor 0.46),,35874.77

@@ -1,17 +1,17 @@
 {
-  "last_updated": "2026-09-16T07:15:17+00:00",
+  "last_updated": "2026-09-16T07:31:30+00:00",
   "market_status": {
     "bist_open": true,
     "us_open": false
   },
   "note": null,
-  "cash": 36425.73,
-  "total_value": 98485.49,
+  "cash": 35874.77,
+  "total_value": 97980.22,
   "initial_cash": 100000.0,
-  "return_pct": -1.51,
+  "return_pct": -2.02,
   "peak_equity": 102267.54,
-  "drawdown_pct": -3.7,
-  "consecutive_losses": 1,
+  "drawdown_pct": -4.19,
+  "consecutive_losses": 2,
   "positions": [
     {
       "ticker": "AKBNK.IS",
@@ -20,20 +20,9 @@
       "currency": "TRY",
       "qty": 198,
       "avg_price": 73.0,
-      "current_price": 69.7,
-      "unrealized_pct": -4.52,
+      "current_price": 68.35,
+      "unrealized_pct": -6.37,
       "entry_native_price": 73.0
-    },
-    {
-      "ticker": "TAVHL.IS",
-      "sector": "Industrials",
-      "market": "BIST",
-      "currency": "TRY",
-      "qty": 52,
-      "avg_price": 274.75,
-      "current_price": 256.5,
-      "unrealized_pct": -6.64,
-      "entry_native_price": 274.75
     },
     {
       "ticker": "CVX",
@@ -64,9 +53,20 @@
       "currency": "TRY",
       "qty": 34,
       "avg_price": 409.0,
-      "current_price": 410.75,
-      "unrealized_pct": 0.43,
+      "current_price": 408.0,
+      "unrealized_pct": -0.24,
       "entry_native_price": 409.0
+    },
+    {
+      "ticker": "BIMAS.IS",
+      "sector": "Consumer Defensive",
+      "market": "BIST",
+      "currency": "TRY",
+      "qty": 33,
+      "avg_price": 416.5,
+      "current_price": 416.5,
+      "unrealized_pct": 0.0,
+      "entry_native_price": 416.5
     }
   ]
 }
