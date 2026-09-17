@@ -1,80 +1,80 @@
 {
-  "date": "2026-09-16",
+  "date": "2026-09-17",
   "discovered": [
     {
-      "ticker": "XOM",
-      "market": "ABD",
-      "composite_score": 0.628
-    },
-    {
-      "ticker": "JPM",
+      "ticker": "ABBV",
       "market": "ABD",
       "composite_score": 0.599
     },
     {
-      "ticker": "BRK-B",
+      "ticker": "MU",
       "market": "ABD",
-      "composite_score": 0.592
-    },
-    {
-      "ticker": "PANW",
-      "market": "ABD",
-      "composite_score": 0.506
-    },
-    {
-      "ticker": "IBM",
-      "market": "ABD",
-      "composite_score": 0.471
-    },
-    {
-      "ticker": "MPARK.IS",
-      "market": "BIST",
-      "composite_score": 0.468
-    },
-    {
-      "ticker": "CVX",
-      "market": "ABD",
-      "composite_score": 0.466
-    },
-    {
-      "ticker": "AKCNS.IS",
-      "market": "BIST",
-      "composite_score": 0.439
+      "composite_score": 0.536
     },
     {
       "ticker": "WFC",
       "market": "ABD",
-      "composite_score": 0.431
+      "composite_score": 0.523
+    },
+    {
+      "ticker": "MPARK.IS",
+      "market": "BIST",
+      "composite_score": 0.512
+    },
+    {
+      "ticker": "IBM",
+      "market": "ABD",
+      "composite_score": 0.511
+    },
+    {
+      "ticker": "PANW",
+      "market": "ABD",
+      "composite_score": 0.468
     },
     {
       "ticker": "ISDMR.IS",
       "market": "BIST",
-      "composite_score": 0.423
+      "composite_score": 0.462
     },
     {
-      "ticker": "CAT",
+      "ticker": "BRK-B",
       "market": "ABD",
-      "composite_score": 0.409
+      "composite_score": 0.43
     },
     {
-      "ticker": "MU",
+      "ticker": "JPM",
       "market": "ABD",
-      "composite_score": 0.385
+      "composite_score": 0.43
     },
     {
-      "ticker": "ORCL",
-      "market": "ABD",
-      "composite_score": 0.383
+      "ticker": "MAVI.IS",
+      "market": "BIST",
+      "composite_score": 0.43
+    },
+    {
+      "ticker": "AKCNS.IS",
+      "market": "BIST",
+      "composite_score": 0.4
     },
     {
       "ticker": "ASTOR.IS",
       "market": "BIST",
-      "composite_score": 0.364
+      "composite_score": 0.391
     },
     {
       "ticker": "ECILC.IS",
       "market": "BIST",
-      "composite_score": 0.36
+      "composite_score": 0.372
+    },
+    {
+      "ticker": "INDES.IS",
+      "market": "BIST",
+      "composite_score": 0.366
+    },
+    {
+      "ticker": "LOGO.IS",
+      "market": "BIST",
+      "composite_score": 0.346
     }
   ]
 }
