@@ -30,7 +30,7 @@
       "market": "BIST",
       "currency": "TRY",
       "entry_native_price": 409.0,
-      "peak_price": 422.0,
+      "peak_price": 424.0,
       "cost_basis": 13926.859,
       "opened_at": "2026-09-15T08:15:14"
     },
@@ -41,7 +41,7 @@
       "market": "BIST",
       "currency": "TRY",
       "entry_native_price": 416.5,
-      "peak_price": 428.0,
+      "peak_price": 429.5,
       "cost_basis": 13765.11675,
       "opened_at": "2026-09-16T07:31:30"
     },
