@@ -19,7 +19,7 @@
       "market": "ABD",
       "currency": "USD",
       "entry_native_price": 218.12640380859375,
-      "peak_price": 10777.063062482106,
+      "peak_price": 10930.729858398438,
       "cost_basis": 10592.989278200854,
       "opened_at": "2026-09-10T14:14:05"
     },
@@ -41,7 +41,7 @@
       "market": "BIST",
       "currency": "TRY",
       "entry_native_price": 416.5,
-      "peak_price": 429.5,
+      "peak_price": 430.25,
       "cost_basis": 13765.11675,
       "opened_at": "2026-09-16T07:31:30"
     },
