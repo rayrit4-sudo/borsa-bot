@@ -1,16 +1,16 @@
 {
-  "last_updated": "2026-09-21T06:57:50+00:00",
+  "last_updated": "2026-09-21T07:17:49+00:00",
   "market_status": {
-    "bist_open": false,
+    "bist_open": true,
     "us_open": false
   },
-  "note": "Piyasalar kapalı — fiyatlar güncellenmedi.",
+  "note": null,
   "cash": 42445.5,
-  "total_value": 97707.16,
+  "total_value": 98030.66,
   "initial_cash": 100000.0,
-  "return_pct": -2.29,
+  "return_pct": -1.97,
   "peak_equity": 102267.54,
-  "drawdown_pct": -4.46,
+  "drawdown_pct": -4.14,
   "consecutive_losses": 3,
   "positions": [
     {
@@ -42,8 +42,8 @@
       "currency": "TRY",
       "qty": 34,
       "avg_price": 409.0,
-      "current_price": 409.0,
-      "unrealized_pct": 0.0,
+      "current_price": 412.25,
+      "unrealized_pct": 0.79,
       "entry_native_price": 409.0
     },
     {
@@ -53,8 +53,8 @@
       "currency": "TRY",
       "qty": 33,
       "avg_price": 416.5,
-      "current_price": 416.5,
-      "unrealized_pct": 0.0,
+      "current_price": 422.0,
+      "unrealized_pct": 1.32,
       "entry_native_price": 416.5
     },
     {
@@ -64,8 +64,8 @@
       "currency": "TRY",
       "qty": 18,
       "avg_price": 369.75,
-      "current_price": 369.75,
-      "unrealized_pct": 0.0,
+      "current_price": 371.5,
+      "unrealized_pct": 0.47,
       "entry_native_price": 369.75
     }
   ]
