@@ -1,65 +1,65 @@
 {
-  "date": "2026-09-21",
+  "date": "2026-09-22",
   "discovered": [
     {
       "ticker": "MU",
       "market": "ABD",
-      "composite_score": 0.674
+      "composite_score": 0.658
     },
     {
-      "ticker": "BRK-B",
+      "ticker": "AMD",
       "market": "ABD",
-      "composite_score": 0.618
+      "composite_score": 0.571
     },
     {
-      "ticker": "JPM",
-      "market": "ABD",
-      "composite_score": 0.615
-    },
-    {
-      "ticker": "XOM",
-      "market": "ABD",
-      "composite_score": 0.53
-    },
-    {
-      "ticker": "ISDMR.IS",
+      "ticker": "MPARK.IS",
       "market": "BIST",
-      "composite_score": 0.505
-    },
-    {
-      "ticker": "PANW",
-      "market": "ABD",
-      "composite_score": 0.491
-    },
-    {
-      "ticker": "ABBV",
-      "market": "ABD",
-      "composite_score": 0.452
+      "composite_score": 0.479
     },
     {
       "ticker": "SELEC.IS",
       "market": "BIST",
-      "composite_score": 0.45
+      "composite_score": 0.456
     },
     {
-      "ticker": "CAT",
+      "ticker": "INTC",
       "market": "ABD",
-      "composite_score": 0.404
+      "composite_score": 0.436
+    },
+    {
+      "ticker": "ISDMR.IS",
+      "market": "BIST",
+      "composite_score": 0.433
+    },
+    {
+      "ticker": "PANW",
+      "market": "ABD",
+      "composite_score": 0.417
+    },
+    {
+      "ticker": "BRK-B",
+      "market": "ABD",
+      "composite_score": 0.417
+    },
+    {
+      "ticker": "ENKAI.IS",
+      "market": "BIST",
+      "composite_score": 0.411
     },
     {
       "ticker": "INDES.IS",
       "market": "BIST",
-      "composite_score": 0.403
-    },
-    {
-      "ticker": "TKFEN.IS",
-      "market": "BIST",
       "composite_score": 0.401
     },
     {
-      "ticker": "DOHOL.IS",
-      "market": "BIST",
-      "composite_score": 0.384
+      "ticker": "ABBV",
+      "market": "ABD",
+      "composite_score": 0.388
+    },
+    {
+      "ticker": "XOM",
+      "market": "ABD",
+      "composite_score": 0.387
     },
     {
       "ticker": "QCOM",
@@ -67,14 +67,14 @@
       "composite_score": 0.383
     },
     {
-      "ticker": "ORCL",
-      "market": "ABD",
-      "composite_score": 0.363
+      "ticker": "DOHOL.IS",
+      "market": "BIST",
+      "composite_score": 0.379
     },
     {
-      "ticker": "KO",
-      "market": "ABD",
-      "composite_score": 0.362
+      "ticker": "RYSAS.IS",
+      "market": "BIST",
+      "composite_score": 0.355
     }
   ]
 }
