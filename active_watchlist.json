@@ -1,80 +1,80 @@
 {
-  "date": "2026-09-23",
+  "date": "2026-09-24",
   "discovered": [
     {
-      "ticker": "ABBV",
+      "ticker": "MU",
       "market": "ABD",
-      "composite_score": 0.588
+      "composite_score": 0.65
     },
     {
       "ticker": "AMD",
       "market": "ABD",
-      "composite_score": 0.571
+      "composite_score": 0.531
+    },
+    {
+      "ticker": "AYGAZ.IS",
+      "market": "BIST",
+      "composite_score": 0.53
     },
     {
       "ticker": "CVX",
       "market": "ABD",
-      "composite_score": 0.537
+      "composite_score": 0.522
     },
     {
-      "ticker": "ISDMR.IS",
-      "market": "BIST",
-      "composite_score": 0.494
+      "ticker": "PANW",
+      "market": "ABD",
+      "composite_score": 0.485
     },
     {
       "ticker": "MPARK.IS",
       "market": "BIST",
-      "composite_score": 0.472
+      "composite_score": 0.478
     },
     {
       "ticker": "SELEC.IS",
       "market": "BIST",
-      "composite_score": 0.466
+      "composite_score": 0.467
     },
     {
-      "ticker": "INDES.IS",
+      "ticker": "ISDMR.IS",
       "market": "BIST",
-      "composite_score": 0.436
-    },
-    {
-      "ticker": "INTC",
-      "market": "ABD",
-      "composite_score": 0.433
-    },
-    {
-      "ticker": "DOHOL.IS",
-      "market": "BIST",
-      "composite_score": 0.424
+      "composite_score": 0.461
     },
     {
       "ticker": "TKFEN.IS",
       "market": "BIST",
-      "composite_score": 0.404
+      "composite_score": 0.443
     },
     {
-      "ticker": "XOM",
+      "ticker": "ABBV",
       "market": "ABD",
-      "composite_score": 0.387
+      "composite_score": 0.435
     },
     {
-      "ticker": "MU",
-      "market": "ABD",
-      "composite_score": 0.355
+      "ticker": "DOHOL.IS",
+      "market": "BIST",
+      "composite_score": 0.399
     },
     {
-      "ticker": "KO",
+      "ticker": "INTC",
       "market": "ABD",
-      "composite_score": 0.352
+      "composite_score": 0.394
     },
     {
-      "ticker": "BRK-B",
+      "ticker": "ENKAI.IS",
+      "market": "BIST",
+      "composite_score": 0.389
+    },
+    {
+      "ticker": "QCOM",
       "market": "ABD",
-      "composite_score": 0.338
+      "composite_score": 0.38
     },
     {
       "ticker": "WFC",
       "market": "ABD",
-      "composite_score": 0.324
+      "composite_score": 0.372
     }
   ]
 }
