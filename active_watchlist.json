@@ -1,80 +1,80 @@
 {
-  "date": "2026-09-25",
+  "date": "2026-09-28",
   "discovered": [
     {
       "ticker": "MU",
       "market": "ABD",
-      "composite_score": 0.647
+      "composite_score": 0.646
     },
     {
-      "ticker": "CVX",
-      "market": "ABD",
-      "composite_score": 0.517
+      "ticker": "AGHOL.IS",
+      "market": "BIST",
+      "composite_score": 0.64
     },
     {
       "ticker": "AYGAZ.IS",
       "market": "BIST",
-      "composite_score": 0.509
+      "composite_score": 0.533
     },
     {
-      "ticker": "MPARK.IS",
-      "market": "BIST",
-      "composite_score": 0.494
-    },
-    {
-      "ticker": "PANW",
+      "ticker": "AMD",
       "market": "ABD",
-      "composite_score": 0.492
+      "composite_score": 0.531
+    },
+    {
+      "ticker": "CVX",
+      "market": "ABD",
+      "composite_score": 0.523
+    },
+    {
+      "ticker": "XOM",
+      "market": "ABD",
+      "composite_score": 0.516
     },
     {
       "ticker": "SELEC.IS",
       "market": "BIST",
-      "composite_score": 0.476
+      "composite_score": 0.491
     },
     {
-      "ticker": "AVGO",
-      "market": "ABD",
+      "ticker": "MPARK.IS",
+      "market": "BIST",
       "composite_score": 0.463
     },
     {
       "ticker": "ISDMR.IS",
       "market": "BIST",
-      "composite_score": 0.457
+      "composite_score": 0.46
     },
     {
       "ticker": "ABBV",
       "market": "ABD",
-      "composite_score": 0.434
-    },
-    {
-      "ticker": "DOHOL.IS",
-      "market": "BIST",
-      "composite_score": 0.403
+      "composite_score": 0.444
     },
     {
       "ticker": "INTC",
       "market": "ABD",
-      "composite_score": 0.397
+      "composite_score": 0.408
     },
     {
-      "ticker": "ISMEN.IS",
+      "ticker": "ENKAI.IS",
       "market": "BIST",
-      "composite_score": 0.394
-    },
-    {
-      "ticker": "AMD",
-      "market": "ABD",
-      "composite_score": 0.381
+      "composite_score": 0.396
     },
     {
       "ticker": "INDES.IS",
       "market": "BIST",
-      "composite_score": 0.381
+      "composite_score": 0.378
+    },
+    {
+      "ticker": "PANW",
+      "market": "ABD",
+      "composite_score": 0.374
     },
     {
       "ticker": "WFC",
       "market": "ABD",
-      "composite_score": 0.37
+      "composite_score": 0.355
     }
   ]
 }
