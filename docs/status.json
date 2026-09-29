@@ -1,17 +1,17 @@
 {
-  "last_updated": "2026-09-29T11:31:36+00:00",
+  "last_updated": "2026-09-29T11:55:45+00:00",
   "market_status": {
     "bist_open": true,
     "us_open": false
   },
   "note": null,
-  "cash": 42445.5,
-  "total_value": 97127.91,
+  "cash": 48596.76,
+  "total_value": 96737.17,
   "initial_cash": 100000.0,
-  "return_pct": -2.87,
+  "return_pct": -3.26,
   "peak_equity": 102267.54,
-  "drawdown_pct": -5.03,
-  "consecutive_losses": 3,
+  "drawdown_pct": -5.41,
+  "consecutive_losses": 4,
   "positions": [
     {
       "ticker": "CVX",
@@ -42,8 +42,8 @@
       "currency": "TRY",
       "qty": 34,
       "avg_price": 409.0,
-      "current_price": 393.0,
-      "unrealized_pct": -3.91,
+      "current_price": 388.75,
+      "unrealized_pct": -4.95,
       "entry_native_price": 409.0
     },
     {
@@ -53,20 +53,9 @@
       "currency": "TRY",
       "qty": 33,
       "avg_price": 416.5,
-      "current_price": 426.75,
-      "unrealized_pct": 2.46,
+      "current_price": 423.25,
+      "unrealized_pct": 1.62,
       "entry_native_price": 416.5
-    },
-    {
-      "ticker": "ASELS.IS",
-      "sector": "Industrials",
-      "market": "BIST",
-      "currency": "TRY",
-      "qty": 18,
-      "avg_price": 369.75,
-      "current_price": 349.0,
-      "unrealized_pct": -5.61,
-      "entry_native_price": 369.75
     }
   ]
 }

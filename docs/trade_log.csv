@@ -15,3 +15,4 @@ timestamp,action,ticker,qty,price,commission,reason,pnl,cash_after
 2026-09-16T07:31:30,BUY,BIMAS.IS,33,416.5,20.62,AL sinyali (skor 0.46),,35874.77
 2026-09-16T07:53:37,SELL,AKBNK.IS,198,66.95,19.88,stop-loss (-8.3%),-1239.47,49110.98
 2026-09-16T07:53:37,BUY,ASELS.IS,18,369.75,9.98,AL sinyali (skor 0.54),,42445.5
+2026-09-29T11:55:45,SELL,ASELS.IS,18,342.25,9.24,stop-loss (-7.4%),-514.22,48596.76
