@@ -1,17 +1,17 @@
 {
-  "last_updated": "2026-09-30T06:59:08+00:00",
+  "last_updated": "2026-09-30T07:22:17+00:00",
   "market_status": {
-    "bist_open": false,
+    "bist_open": true,
     "us_open": false
   },
-  "note": "Piyasalar kapalı — fiyatlar güncellenmedi.",
-  "cash": 48596.76,
-  "total_value": 97202.92,
+  "note": null,
+  "cash": 61463.43,
+  "total_value": 96279.09,
   "initial_cash": 100000.0,
-  "return_pct": -2.8,
+  "return_pct": -3.72,
   "peak_equity": 102267.54,
-  "drawdown_pct": -4.95,
-  "consecutive_losses": 4,
+  "drawdown_pct": -5.86,
+  "consecutive_losses": 5,
   "positions": [
     {
       "ticker": "CVX",
@@ -36,25 +36,14 @@
       "entry_native_price": 218.12640380859375
     },
     {
-      "ticker": "TUPRS.IS",
-      "sector": "Energy",
-      "market": "BIST",
-      "currency": "TRY",
-      "qty": 34,
-      "avg_price": 409.0,
-      "current_price": 409.0,
-      "unrealized_pct": 0.0,
-      "entry_native_price": 409.0
-    },
-    {
       "ticker": "BIMAS.IS",
       "sector": "Consumer Defensive",
       "market": "BIST",
       "currency": "TRY",
       "qty": 33,
       "avg_price": 416.5,
-      "current_price": 416.5,
-      "unrealized_pct": 0.0,
+      "current_price": 420.0,
+      "unrealized_pct": 0.84,
       "entry_native_price": 416.5
     }
   ]

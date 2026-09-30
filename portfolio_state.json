@@ -1,5 +1,5 @@
 {
-  "cash": 48596.7570617735,
+  "cash": 61463.4280617735,
   "positions": {
     "CVX": {
       "qty": 1,
@@ -23,17 +23,6 @@
       "cost_basis": 10592.989278200854,
       "opened_at": "2026-09-10T14:14:05"
     },
-    "TUPRS.IS": {
-      "qty": 34,
-      "avg_price": 409.0,
-      "sector": "Energy",
-      "market": "BIST",
-      "currency": "TRY",
-      "entry_native_price": 409.0,
-      "peak_price": 424.0,
-      "cost_basis": 13926.859,
-      "opened_at": "2026-09-15T08:15:14"
-    },
     "BIMAS.IS": {
       "qty": 33,
       "avg_price": 416.5,
@@ -47,5 +36,5 @@
     }
   },
   "peak_equity": 102267.54052352905,
-  "consecutive_losses": 4
+  "consecutive_losses": 5
 }
