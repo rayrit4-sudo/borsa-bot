@@ -1,5 +1,5 @@
 {
-  "cash": 61463.4280617735,
+  "cash": 57524.178726932245,
   "positions": {
     "CVX": {
       "qty": 1,
@@ -33,6 +33,17 @@
       "peak_price": 438.25,
       "cost_basis": 13765.11675,
       "opened_at": "2026-09-16T07:31:30"
+    },
+    "WFC": {
+      "qty": 1,
+      "avg_price": 3933.349310874939,
+      "sector": "Financial Services",
+      "market": "ABD",
+      "currency": "USD",
+      "entry_native_price": 80.25,
+      "peak_price": 3933.349310874939,
+      "cost_basis": 3939.2493348412513,
+      "opened_at": "2026-09-30T13:34:43"
     }
   },
   "peak_equity": 102267.54052352905,
