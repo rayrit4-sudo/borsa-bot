@@ -1,16 +1,16 @@
 {
-  "last_updated": "2026-09-30T08:44:18+00:00",
+  "last_updated": "2026-09-30T08:58:40+00:00",
   "market_status": {
     "bist_open": true,
     "us_open": false
   },
   "note": null,
   "cash": 61463.43,
-  "total_value": 96460.59,
+  "total_value": 96435.84,
   "initial_cash": 100000.0,
-  "return_pct": -3.54,
+  "return_pct": -3.56,
   "peak_equity": 102267.54,
-  "drawdown_pct": -5.68,
+  "drawdown_pct": -5.7,
   "consecutive_losses": 5,
   "positions": [
     {
@@ -42,8 +42,8 @@
       "currency": "TRY",
       "qty": 33,
       "avg_price": 416.5,
-      "current_price": 425.5,
-      "unrealized_pct": 2.16,
+      "current_price": 424.75,
+      "unrealized_pct": 1.98,
       "entry_native_price": 416.5
     }
   ]
