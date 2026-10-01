@@ -250,6 +250,8 @@ def main() -> None:
                 break
             if regime_by_market.get(r["market"], 0.0) <= config.MARKET_REGIME_BEARISH_THRESHOLD:
                 continue  # bu piyasa ayı trendinde, yeni alım yapılmıyor
+            if r["market"] == "BIST" and r["composite_score"] < config.BIST_MIN_BUY_SCORE:
+                continue  # BIST için daha sıkı giriş şartı
             broker.buy(
                 r["ticker"], r["last_price"], r["sector"], r["market"], r["currency"], r["native_price"],
                 current_prices, reason=f"AL sinyali (skor {r['composite_score']:.2f})",

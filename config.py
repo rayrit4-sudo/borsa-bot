@@ -102,7 +102,11 @@ MARKET_REGIME_BEARISH_THRESHOLD = -0.30
 INITIAL_CASH = 100_000.0     # TL
 MAX_OPEN_POSITIONS = 5
 MAX_POSITIONS_PER_SECTOR = 2   # aynı sektörden en fazla bu kadar pozisyon (konsantrasyon riskini sınırlar)
-MAX_POSITIONS_PER_MARKET = 3   # BIST veya ABD'den en fazla bu kadar pozisyon (tek piyasaya aşırı yığılmayı engeller)
+MAX_POSITIONS_PER_MARKET = 3   # piyasa bazlı limit tanımsızsa varsayılan
+# Piyasa bazlı limitler: BIST şu an sıkıntılı (sık stop-loss) olduğu için ABD ağırlıklı.
+MAX_POSITIONS_BY_MARKET = {"BIST": 1, "ABD": 4}
+# BIST'ten alım için daha yüksek bileşik skor şartı (ABD için BUY_THRESHOLD geçerli).
+BIST_MIN_BUY_SCORE = 0.50
 
 # Pozisyon büyüklüğü: sabit % yerine riske dayalı boyutlandırma (profesyonel
 # yatırımcıların ortak yöntemi). Her işlemde, stop-loss'a çarpması hâlinde

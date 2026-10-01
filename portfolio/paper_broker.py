@@ -145,7 +145,7 @@ class PaperBroker:
         if self._sector_counts().get(sector, 0) >= config.MAX_POSITIONS_PER_SECTOR:
             log.info("ATLANDI (sektör limiti doldu): %s [%s]", ticker, sector)
             return False
-        if self._market_counts().get(market, 0) >= config.MAX_POSITIONS_PER_MARKET:
+        if self._market_counts().get(market, 0) >= config.MAX_POSITIONS_BY_MARKET.get(market, config.MAX_POSITIONS_PER_MARKET):
             log.info("ATLANDI (piyasa limiti doldu): %s [%s]", ticker, market)
             return False
 
