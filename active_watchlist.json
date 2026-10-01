@@ -1,80 +1,80 @@
 {
-  "date": "2026-09-30",
+  "date": "2026-10-01",
   "discovered": [
     {
       "ticker": "MU",
       "market": "ABD",
-      "composite_score": 0.665
+      "composite_score": 0.564
     },
     {
       "ticker": "AYGAZ.IS",
       "market": "BIST",
-      "composite_score": 0.551
-    },
-    {
-      "ticker": "WFC",
-      "market": "ABD",
-      "composite_score": 0.535
-    },
-    {
-      "ticker": "SELEC.IS",
-      "market": "BIST",
-      "composite_score": 0.514
+      "composite_score": 0.552
     },
     {
       "ticker": "MPARK.IS",
       "market": "BIST",
-      "composite_score": 0.486
+      "composite_score": 0.521
     },
     {
-      "ticker": "ISDMR.IS",
+      "ticker": "SELEC.IS",
       "market": "BIST",
-      "composite_score": 0.484
-    },
-    {
-      "ticker": "AGHOL.IS",
-      "market": "BIST",
-      "composite_score": 0.474
-    },
-    {
-      "ticker": "ABBV",
-      "market": "ABD",
-      "composite_score": 0.461
-    },
-    {
-      "ticker": "ENKAI.IS",
-      "market": "BIST",
-      "composite_score": 0.413
+      "composite_score": 0.51
     },
     {
       "ticker": "PANW",
       "market": "ABD",
-      "composite_score": 0.405
+      "composite_score": 0.492
     },
     {
-      "ticker": "AMD",
-      "market": "ABD",
-      "composite_score": 0.404
-    },
-    {
-      "ticker": "ORCL",
-      "market": "ABD",
-      "composite_score": 0.381
-    },
-    {
-      "ticker": "INDES.IS",
+      "ticker": "AGHOL.IS",
       "market": "BIST",
-      "composite_score": 0.377
+      "composite_score": 0.49
     },
     {
-      "ticker": "IBM",
-      "market": "ABD",
-      "composite_score": 0.354
+      "ticker": "ISDMR.IS",
+      "market": "BIST",
+      "composite_score": 0.486
     },
     {
       "ticker": "TKFEN.IS",
       "market": "BIST",
-      "composite_score": 0.34
+      "composite_score": 0.457
+    },
+    {
+      "ticker": "ENKAI.IS",
+      "market": "BIST",
+      "composite_score": 0.416
+    },
+    {
+      "ticker": "AMD",
+      "market": "ABD",
+      "composite_score": 0.4
+    },
+    {
+      "ticker": "KO",
+      "market": "ABD",
+      "composite_score": 0.385
+    },
+    {
+      "ticker": "INDES.IS",
+      "market": "BIST",
+      "composite_score": 0.38
+    },
+    {
+      "ticker": "ORCL",
+      "market": "ABD",
+      "composite_score": 0.373
+    },
+    {
+      "ticker": "JNJ",
+      "market": "ABD",
+      "composite_score": 0.35
+    },
+    {
+      "ticker": "IBM",
+      "market": "ABD",
+      "composite_score": 0.346
     }
   ]
 }
