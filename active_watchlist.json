@@ -1,10 +1,10 @@
 {
-  "date": "2026-10-07",
+  "date": "2026-10-08",
   "discovered": [
     {
       "ticker": "XOM",
       "market": "ABD",
-      "composite_score": 0.678
+      "composite_score": 0.684
     },
     {
       "ticker": "AMD",
@@ -12,69 +12,69 @@
       "composite_score": 0.531
     },
     {
-      "ticker": "BRSAN.IS",
-      "market": "BIST",
-      "composite_score": 0.511
+      "ticker": "PANW",
+      "market": "ABD",
+      "composite_score": 0.496
     },
     {
       "ticker": "AGHOL.IS",
       "market": "BIST",
-      "composite_score": 0.5
-    },
-    {
-      "ticker": "PANW",
-      "market": "ABD",
-      "composite_score": 0.459
+      "composite_score": 0.488
     },
     {
       "ticker": "TXN",
       "market": "ABD",
-      "composite_score": 0.451
+      "composite_score": 0.486
     },
     {
-      "ticker": "TRGYO.IS",
-      "market": "BIST",
-      "composite_score": 0.37
+      "ticker": "ABBV",
+      "market": "ABD",
+      "composite_score": 0.407
+    },
+    {
+      "ticker": "PG",
+      "market": "ABD",
+      "composite_score": 0.371
     },
     {
       "ticker": "MPARK.IS",
       "market": "BIST",
-      "composite_score": 0.367
-    },
-    {
-      "ticker": "AXP",
-      "market": "ABD",
-      "composite_score": 0.35
+      "composite_score": 0.37
     },
     {
       "ticker": "EKGYO.IS",
       "market": "BIST",
-      "composite_score": 0.34
+      "composite_score": 0.336
     },
     {
-      "ticker": "T",
+      "ticker": "BRSAN.IS",
+      "market": "BIST",
+      "composite_score": 0.312
+    },
+    {
+      "ticker": "RYSAS.IS",
+      "market": "BIST",
+      "composite_score": 0.31
+    },
+    {
+      "ticker": "CVX",
       "market": "ABD",
-      "composite_score": 0.306
+      "composite_score": 0.307
     },
     {
       "ticker": "AKSEN.IS",
       "market": "BIST",
-      "composite_score": 0.3
+      "composite_score": 0.299
     },
     {
-      "ticker": "GE",
-      "market": "ABD",
-      "composite_score": 0.289
-    },
-    {
-      "ticker": "RYSAS.IS",
+      "ticker": "ISGYO.IS",
       "market": "BIST",
       "composite_score": 0.268
     },
     {
       "ticker": "SKBNK.IS",
       "market": "BIST",
-      "composite_score": 0.247
+      "composite_score": 0.243
     }
   ]
 }
