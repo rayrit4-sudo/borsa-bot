@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-07",
+  "date": "2026-10-08",
   "tickers": {
     "THYAO.IS": {
       "fundamental_score": -0.11189297385620918,
@@ -8,61 +8,61 @@
       "sector": "Industrials"
     },
     "GARAN.IS": {
-      "fundamental_score": 0.777243508974359,
+      "fundamental_score": 0.7772988358974359,
       "news_score": 1.0,
       "long_term_score": 1.0,
       "sector": "Financial Services"
     },
     "AKBNK.IS": {
-      "fundamental_score": 0.9213005705128205,
+      "fundamental_score": 0.9217111025641026,
       "news_score": 1.0,
       "long_term_score": 1.0,
       "sector": "Financial Services"
     },
     "ASELS.IS": {
-      "fundamental_score": 0.3467229978021977,
+      "fundamental_score": 0.36513539203296697,
       "news_score": -1.0,
       "long_term_score": 1.0,
       "sector": "Industrials"
     },
     "KCHOL.IS": {
-      "fundamental_score": 0.1770608483893557,
+      "fundamental_score": 0.1728837233893557,
       "news_score": 0.0,
-      "long_term_score": 0.7047830149086229,
+      "long_term_score": 0.7300033857823081,
       "sector": "Industrials"
     },
     "SISE.IS": {
-      "fundamental_score": 0.15707348126750695,
+      "fundamental_score": 0.15603073126750694,
       "news_score": -1.0,
-      "long_term_score": -0.24828989182251893,
+      "long_term_score": -0.23552873156610266,
       "sector": "Industrials"
     },
     "EREGL.IS": {
-      "fundamental_score": 0.40301248686974794,
+      "fundamental_score": 0.4022360582983193,
       "news_score": 0.0,
-      "long_term_score": -0.24749544816387015,
+      "long_term_score": -0.25202533139734173,
       "sector": "Basic Materials"
     },
     "BIMAS.IS": {
-      "fundamental_score": 0.4155057659179056,
-      "news_score": 1.0,
+      "fundamental_score": 0.4158726141321913,
+      "news_score": 0.0,
       "long_term_score": 1.0,
       "sector": "Consumer Defensive"
     },
     "TUPRS.IS": {
-      "fundamental_score": 0.7180857973443223,
+      "fundamental_score": 0.7101831956959705,
       "news_score": 1.0,
       "long_term_score": 1.0,
       "sector": "Energy"
     },
     "SAHOL.IS": {
-      "fundamental_score": 0.5614187949999999,
+      "fundamental_score": 0.5603106491666666,
       "news_score": 0.0,
-      "long_term_score": 0.6394185178195089,
+      "long_term_score": 0.6497592737554387,
       "sector": "Financial Services"
     },
     "YKBNK.IS": {
-      "fundamental_score": 0.3411396987179487,
+      "fundamental_score": 0.3426139230769231,
       "news_score": 0.0,
       "long_term_score": 1.0,
       "sector": "Financial Services"
@@ -76,65 +76,65 @@
     "PGSUS.IS": {
       "fundamental_score": -0.09921666706666663,
       "news_score": 0.0,
-      "long_term_score": 0.42432663646353364,
+      "long_term_score": 0.4018472194557412,
       "sector": "Industrials"
     },
     "FROTO.IS": {
-      "fundamental_score": 0.03040988358651147,
+      "fundamental_score": 0.028407112982115845,
       "news_score": 0.0,
-      "long_term_score": 0.02704940590309568,
+      "long_term_score": 0.035928706706637836,
       "sector": "Consumer Cyclical"
     },
     "TCELL.IS": {
-      "fundamental_score": 0.22223098361344534,
+      "fundamental_score": 0.2205082782563025,
       "news_score": 0.0,
-      "long_term_score": 0.21997286354894352,
+      "long_term_score": 0.24931210365998702,
       "sector": "Communication Services"
     },
     "ARCLK.IS": {
       "fundamental_score": -0.40537999999999996,
-      "news_score": 0.0,
-      "long_term_score": -0.9314491153907188,
+      "news_score": 1.0,
+      "long_term_score": -0.9266986861695132,
       "sector": "Consumer Cyclical"
     },
     "TOASO.IS": {
-      "fundamental_score": 0.43000328401206633,
+      "fundamental_score": 0.42943071807800043,
       "news_score": 1.0,
-      "long_term_score": 0.15755748810565273,
+      "long_term_score": 0.1464019774460601,
       "sector": "Consumer Cyclical"
     },
     "ULKER.IS": {
       "fundamental_score": 0.25080335943977594,
       "news_score": 1.0,
-      "long_term_score": -0.2602536465299997,
+      "long_term_score": -0.24658289357829122,
       "sector": "Consumer Defensive"
     },
     "PETKM.IS": {
       "fundamental_score": 0.28903921568627444,
       "news_score": 0.0,
-      "long_term_score": -0.741823629047596,
+      "long_term_score": -0.692679231871631,
       "sector": "Basic Materials"
     },
     "HALKB.IS": {
-      "fundamental_score": 0.7923078473290598,
+      "fundamental_score": 0.7949661678418801,
       "news_score": 0.0,
-      "long_term_score": 0.6263238304146306,
+      "long_term_score": 0.6003738135339614,
       "sector": "Financial Services"
     },
     "VAKBN.IS": {
-      "fundamental_score": 0.9496491814102564,
+      "fundamental_score": 0.9486690211538461,
       "news_score": 0.0,
-      "long_term_score": 0.596609068282653,
+      "long_term_score": 0.6164705314701058,
       "sector": "Financial Services"
     },
     "ENJSA.IS": {
-      "fundamental_score": 0.14470020605203612,
+      "fundamental_score": 0.13874169323152333,
       "news_score": 1.0,
       "long_term_score": 1.0,
       "sector": "Utilities"
     },
     "MGROS.IS": {
-      "fundamental_score": 0.09194365535822023,
+      "fundamental_score": 0.09072845274833007,
       "news_score": 1.0,
       "long_term_score": 1.0,
       "sector": "Consumer Defensive"
@@ -142,95 +142,83 @@
     "SASA.IS": {
       "fundamental_score": 0.1018941176470588,
       "news_score": -0.75,
-      "long_term_score": -0.9633355696408785,
+      "long_term_score": -0.9769604715653575,
       "sector": "Consumer Cyclical"
     },
     "TAVHL.IS": {
-      "fundamental_score": 0.3224730543640019,
+      "fundamental_score": 0.3197911360947712,
       "news_score": 0.0,
-      "long_term_score": 0.6791230950840401,
+      "long_term_score": 0.6987591373460114,
       "sector": "Industrials"
     },
     "KRDMD.IS": {
-      "fundamental_score": 0.4399426993055555,
+      "fundamental_score": 0.4417475743055555,
       "news_score": 0.0,
-      "long_term_score": 0.17176063421144816,
+      "long_term_score": 0.14845425595607575,
       "sector": "Basic Materials"
     },
     "BAGFS.IS": {
       "fundamental_score": 0.2870513745490196,
       "news_score": 0.0,
-      "long_term_score": -0.958507849654386,
+      "long_term_score": -0.9041446462911935,
       "sector": "Basic Materials"
     },
     "GUBRF.IS": {
-      "fundamental_score": 0.25200878131868126,
-      "news_score": 0.0,
-      "long_term_score": 0.2990037647863435,
+      "fundamental_score": 0.2855838184065934,
+      "news_score": 1.0,
+      "long_term_score": 0.33004108582039593,
       "sector": "Basic Materials"
     },
     "TTKOM.IS": {
       "fundamental_score": 0.3766773137815126,
       "news_score": 0.0,
-      "long_term_score": 0.28064077635714857,
+      "long_term_score": 0.2921704822089648,
       "sector": "Communication Services"
     },
     "AEFES.IS": {
-      "fundamental_score": 0.2436764447721396,
+      "fundamental_score": 0.24193050933257915,
       "news_score": 1.0,
-      "long_term_score": 0.5367873345924394,
+      "long_term_score": 0.5468881947090556,
       "sector": "Consumer Defensive"
     },
     "DOAS.IS": {
-      "fundamental_score": -0.010882363109243716,
+      "fundamental_score": -0.011418380966386556,
       "news_score": 1.0,
-      "long_term_score": 0.3996414537098627,
+      "long_term_score": 0.4151023642956866,
       "sector": "Consumer Cyclical"
     },
     "CCOLA.IS": {
-      "fundamental_score": 0.4839364870636716,
-      "news_score": 0.0,
+      "fundamental_score": 0.48765839777795733,
+      "news_score": -1.0,
       "long_term_score": -1.0,
       "sector": "Consumer Defensive"
     },
     "AKSA.IS": {
-      "fundamental_score": 0.6731718479135242,
+      "fundamental_score": 0.6725600466314731,
       "news_score": 1.0,
-      "long_term_score": 0.21928747251813974,
+      "long_term_score": 0.24372819721797434,
       "sector": "Consumer Cyclical"
     },
     "OTKAR.IS": {
       "fundamental_score": -1.0,
       "news_score": -0.3333333333333333,
-      "long_term_score": -0.09078290763392793,
+      "long_term_score": -0.14686024384971053,
       "sector": "Consumer Cyclical"
     },
     "ALARK.IS": {
       "fundamental_score": 0.6366995098039215,
       "news_score": 0.0,
-      "long_term_score": 0.9452109339974544,
+      "long_term_score": 0.9843467597905504,
       "sector": "Industrials"
     },
-    "BRSAN.IS": {
-      "fundamental_score": 0.31399499852456364,
-      "news_score": 0.0,
-      "long_term_score": 1.0,
-      "sector": "Basic Materials"
-    },
     "AGHOL.IS": {
-      "fundamental_score": 0.34406003764005605,
+      "fundamental_score": 0.34295547514005603,
       "news_score": 1.0,
       "long_term_score": 1.0,
       "sector": "Industrials"
     },
-    "TRGYO.IS": {
-      "fundamental_score": 0.5982533771428571,
-      "news_score": 0.0,
-      "long_term_score": 1.0,
-      "sector": "Real Estate"
-    },
     "MPARK.IS": {
-      "fundamental_score": 0.3388735858462614,
+      "fundamental_score": 0.3390018468352725,
       "news_score": 0.3333333333333333,
       "long_term_score": 1.0,
       "sector": "Healthcare"
@@ -238,77 +226,89 @@
     "EKGYO.IS": {
       "fundamental_score": -0.22352418300653595,
       "news_score": 0.0,
-      "long_term_score": 0.8418416130160007,
+      "long_term_score": 0.8482492858327764,
       "sector": "Real Estate"
     },
-    "AKSEN.IS": {
-      "fundamental_score": -0.13167460384507654,
-      "news_score": 1.0,
-      "long_term_score": 0.828466946963353,
-      "sector": "Utilities"
+    "BRSAN.IS": {
+      "fundamental_score": 0.31399499852456364,
+      "news_score": 0.0,
+      "long_term_score": 1.0,
+      "sector": "Basic Materials"
     },
     "RYSAS.IS": {
-      "fundamental_score": 0.20469503672430506,
+      "fundamental_score": 0.21940505870232704,
       "news_score": 0.0,
       "long_term_score": 1.0,
       "sector": "Industrials"
     },
+    "AKSEN.IS": {
+      "fundamental_score": -0.1301918181307908,
+      "news_score": 1.0,
+      "long_term_score": 0.8116087573744561,
+      "sector": "Utilities"
+    },
+    "ISGYO.IS": {
+      "fundamental_score": -0.14487999999999998,
+      "news_score": 1.0,
+      "long_term_score": 0.6471748630213621,
+      "sector": "Real Estate"
+    },
     "SKBNK.IS": {
       "fundamental_score": 0.8393277972222223,
       "news_score": 0.0,
-      "long_term_score": -0.2108543300489294,
+      "long_term_score": -0.232935204573953,
       "sector": "Financial Services"
     },
     "AAPL": {
-      "fundamental_score": 0.2581126890756303,
+      "fundamental_score": 0.254999974789916,
       "news_score": 1.0,
-      "long_term_score": 0.944120502757787,
+      "long_term_score": 0.9601963778481573,
       "sector": "Technology"
     },
     "MSFT": {
-      "fundamental_score": 0.4345762232142857,
+      "fundamental_score": 0.4343473928571428,
       "news_score": 1.0,
-      "long_term_score": 0.6200938680647139,
+      "long_term_score": 0.6212201390995702,
       "sector": "Technology"
     },
     "GOOGL": {
-      "fundamental_score": 0.5885262767857142,
+      "fundamental_score": 0.5872629107142856,
       "news_score": -1.0,
       "long_term_score": 1.0,
       "sector": "Communication Services"
     },
     "AMZN": {
-      "fundamental_score": 0.5311026151691446,
-      "news_score": 1.0,
-      "long_term_score": 0.38270086571134776,
+      "fundamental_score": 0.5245962717625512,
+      "news_score": -1.0,
+      "long_term_score": 0.4055396684053716,
       "sector": "Consumer Cyclical"
     },
     "NVDA": {
-      "fundamental_score": 0.5156673214285714,
-      "news_score": 0.75,
+      "fundamental_score": 0.5176652500000001,
+      "news_score": 1.0,
       "long_term_score": 1.0,
       "sector": "Technology"
     },
     "META": {
-      "fundamental_score": 0.25089103466386553,
+      "fundamental_score": 0.25783648109243695,
       "news_score": 1.0,
-      "long_term_score": 0.8734930124920108,
+      "long_term_score": 0.8377776982527376,
       "sector": "Communication Services"
     },
     "NFLX": {
-      "fundamental_score": 0.32386664390756303,
-      "news_score": 0.5,
-      "long_term_score": -0.04651813384307979,
+      "fundamental_score": 0.3210308581932773,
+      "news_score": -0.3333333333333333,
+      "long_term_score": -0.031012583972429675,
       "sector": "Communication Services"
     },
     "TSLA": {
       "fundamental_score": -0.12860714500000003,
-      "news_score": -1.0,
-      "long_term_score": 0.28894034679484193,
+      "news_score": 0.0,
+      "long_term_score": 0.29228313877411805,
       "sector": "Consumer Cyclical"
     },
     "XOM": {
-      "fundamental_score": 0.5546348397435897,
+      "fundamental_score": 0.5555034853479853,
       "news_score": 1.0,
       "long_term_score": 1.0,
       "sector": "Energy"
@@ -328,26 +328,26 @@
     "TXN": {
       "fundamental_score": 0.2964100840336134,
       "news_score": 1.0,
-      "long_term_score": 0.5368505912833443,
+      "long_term_score": 0.5013871517931847,
       "sector": "Technology"
     },
-    "AXP": {
-      "fundamental_score": 0.11341257076869207,
-      "news_score": 1.0,
-      "long_term_score": 0.6074215595027845,
-      "sector": "Financial Services"
-    },
-    "T": {
-      "fundamental_score": 0.3470529459437621,
-      "news_score": 1.0,
-      "long_term_score": 0.40000892412980815,
-      "sector": "Communication Services"
-    },
-    "GE": {
-      "fundamental_score": 0.17418908911064426,
+    "ABBV": {
+      "fundamental_score": 0.2660000066666667,
       "news_score": 0.0,
       "long_term_score": 1.0,
-      "sector": "Industrials"
+      "sector": "Healthcare"
+    },
+    "PG": {
+      "fundamental_score": 0.04992193487394952,
+      "news_score": 1.0,
+      "long_term_score": 0.05552803620761537,
+      "sector": "Consumer Defensive"
+    },
+    "CVX": {
+      "fundamental_score": 0.5989039345238095,
+      "news_score": -1.0,
+      "long_term_score": 0.9054387536621034,
+      "sector": "Energy"
     }
   }
 }
