@@ -1,80 +1,80 @@
 {
-  "date": "2026-10-09",
+  "date": "2026-10-12",
   "discovered": [
     {
-      "ticker": "XOM",
+      "ticker": "CVX",
       "market": "ABD",
-      "composite_score": 0.639
-    },
-    {
-      "ticker": "PANW",
-      "market": "ABD",
-      "composite_score": 0.512
-    },
-    {
-      "ticker": "TXN",
-      "market": "ABD",
-      "composite_score": 0.492
-    },
-    {
-      "ticker": "AMD",
-      "market": "ABD",
-      "composite_score": 0.475
-    },
-    {
-      "ticker": "AGHOL.IS",
-      "market": "BIST",
-      "composite_score": 0.472
+      "composite_score": 0.643
     },
     {
       "ticker": "ABBV",
       "market": "ABD",
-      "composite_score": 0.401
+      "composite_score": 0.537
     },
     {
-      "ticker": "JNJ",
+      "ticker": "TXN",
       "market": "ABD",
-      "composite_score": 0.373
+      "composite_score": 0.536
     },
     {
-      "ticker": "PG",
+      "ticker": "JPM",
       "market": "ABD",
-      "composite_score": 0.342
+      "composite_score": 0.52
+    },
+    {
+      "ticker": "PANW",
+      "market": "ABD",
+      "composite_score": 0.503
+    },
+    {
+      "ticker": "MS",
+      "market": "ABD",
+      "composite_score": 0.493
+    },
+    {
+      "ticker": "AGHOL.IS",
+      "market": "BIST",
+      "composite_score": 0.464
+    },
+    {
+      "ticker": "XOM",
+      "market": "ABD",
+      "composite_score": 0.461
+    },
+    {
+      "ticker": "BAC",
+      "market": "ABD",
+      "composite_score": 0.43
     },
     {
       "ticker": "MU",
       "market": "ABD",
-      "composite_score": 0.329
+      "composite_score": 0.367
     },
     {
-      "ticker": "AXP",
+      "ticker": "GE",
       "market": "ABD",
-      "composite_score": 0.321
+      "composite_score": 0.312
     },
     {
-      "ticker": "T",
+      "ticker": "INTC",
       "market": "ABD",
-      "composite_score": 0.306
-    },
-    {
-      "ticker": "ISGYO.IS",
-      "market": "BIST",
-      "composite_score": 0.29
+      "composite_score": 0.304
     },
     {
       "ticker": "QCOM",
       "market": "ABD",
-      "composite_score": 0.283
+      "composite_score": 0.298
     },
     {
-      "ticker": "HON",
+      "ticker": "LMT",
       "market": "ABD",
-      "composite_score": 0.275
+      "composite_score": 0.266
     },
     {
-      "ticker": "MRK",
+      "ticker": "GS",
       "market": "ABD",
-      "composite_score": 0.24
+      "composite_score": 0.225
     }
   ]
 }
