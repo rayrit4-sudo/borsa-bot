@@ -1,5 +1,5 @@
 {
-  "cash": 57524.178726932245,
+  "cash": 50667.909818622305,
   "positions": {
     "CVX": {
       "qty": 1,
@@ -8,7 +8,7 @@
       "market": "ABD",
       "currency": "USD",
       "entry_native_price": 214.03500366210938,
-      "peak_price": 10587.858739343937,
+      "peak_price": 10674.414931838983,
       "cost_basis": 10394.103445363115,
       "opened_at": "2026-09-10T13:44:44"
     },
@@ -44,6 +44,17 @@
       "peak_price": 3955.86354738925,
       "cost_basis": 3939.2493348412513,
       "opened_at": "2026-09-30T13:34:43"
+    },
+    "ENJSA.IS": {
+      "qty": 60,
+      "avg_price": 114.0999984741211,
+      "sector": "Utilities",
+      "market": "BIST",
+      "currency": "TRY",
+      "entry_native_price": 114.0999984741211,
+      "peak_price": 114.0999984741211,
+      "cost_basis": 6856.268908309937,
+      "opened_at": "2026-10-13T13:38:27"
     }
   },
   "peak_equity": 102267.54052352905,
