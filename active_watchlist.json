@@ -1,10 +1,10 @@
 {
-  "date": "2026-10-12",
+  "date": "2026-10-13",
   "discovered": [
     {
       "ticker": "CVX",
       "market": "ABD",
-      "composite_score": 0.643
+      "composite_score": 0.642
     },
     {
       "ticker": "ABBV",
@@ -12,49 +12,49 @@
       "composite_score": 0.537
     },
     {
-      "ticker": "TXN",
-      "market": "ABD",
-      "composite_score": 0.536
-    },
-    {
       "ticker": "JPM",
       "market": "ABD",
-      "composite_score": 0.52
+      "composite_score": 0.533
+    },
+    {
+      "ticker": "TXN",
+      "market": "ABD",
+      "composite_score": 0.531
+    },
+    {
+      "ticker": "GS",
+      "market": "ABD",
+      "composite_score": 0.527
     },
     {
       "ticker": "PANW",
       "market": "ABD",
-      "composite_score": 0.503
-    },
-    {
-      "ticker": "MS",
-      "market": "ABD",
-      "composite_score": 0.493
-    },
-    {
-      "ticker": "AGHOL.IS",
-      "market": "BIST",
-      "composite_score": 0.464
+      "composite_score": 0.514
     },
     {
       "ticker": "XOM",
       "market": "ABD",
-      "composite_score": 0.461
+      "composite_score": 0.459
     },
     {
-      "ticker": "BAC",
+      "ticker": "AGHOL.IS",
+      "market": "BIST",
+      "composite_score": 0.449
+    },
+    {
+      "ticker": "MS",
       "market": "ABD",
-      "composite_score": 0.43
+      "composite_score": 0.416
     },
     {
       "ticker": "MU",
       "market": "ABD",
-      "composite_score": 0.367
+      "composite_score": 0.413
     },
     {
-      "ticker": "GE",
+      "ticker": "PG",
       "market": "ABD",
-      "composite_score": 0.312
+      "composite_score": 0.319
     },
     {
       "ticker": "INTC",
@@ -62,19 +62,19 @@
       "composite_score": 0.304
     },
     {
+      "ticker": "TKFEN.IS",
+      "market": "BIST",
+      "composite_score": 0.295
+    },
+    {
+      "ticker": "NOW",
+      "market": "ABD",
+      "composite_score": 0.289
+    },
+    {
       "ticker": "QCOM",
       "market": "ABD",
-      "composite_score": 0.298
-    },
-    {
-      "ticker": "LMT",
-      "market": "ABD",
-      "composite_score": 0.266
-    },
-    {
-      "ticker": "GS",
-      "market": "ABD",
-      "composite_score": 0.225
+      "composite_score": 0.288
     }
   ]
 }
