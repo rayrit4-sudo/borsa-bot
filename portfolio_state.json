@@ -1,5 +1,5 @@
 {
-  "cash": 50667.909818622305,
+  "cash": 52688.20631340488,
   "positions": {
     "CVX": {
       "qty": 1,
@@ -11,17 +11,6 @@
       "peak_price": 10971.36604568665,
       "cost_basis": 10394.103445363115,
       "opened_at": "2026-09-10T13:44:44"
-    },
-    "NVDA": {
-      "qty": 1,
-      "avg_price": 10577.123592811637,
-      "sector": "Technology",
-      "market": "ABD",
-      "currency": "USD",
-      "entry_native_price": 218.12640380859375,
-      "peak_price": 11805.573984692688,
-      "cost_basis": 10592.989278200854,
-      "opened_at": "2026-09-10T14:14:05"
     },
     "BIMAS.IS": {
       "qty": 33,
@@ -41,7 +30,7 @@
       "market": "ABD",
       "currency": "USD",
       "entry_native_price": 80.25,
-      "peak_price": 3955.86354738925,
+      "peak_price": 4029.038248591736,
       "cost_basis": 3939.2493348412513,
       "opened_at": "2026-09-30T13:34:43"
     },
@@ -55,8 +44,19 @@
       "peak_price": 114.0999984741211,
       "cost_basis": 6856.268908309937,
       "opened_at": "2026-10-13T13:38:27"
+    },
+    "XOM": {
+      "qty": 1,
+      "avg_price": 8661.147611352266,
+      "sector": "Energy",
+      "market": "ABD",
+      "currency": "USD",
+      "entry_native_price": 175.28500366210938,
+      "peak_price": 8661.147611352266,
+      "cost_basis": 8674.139332769295,
+      "opened_at": "2026-10-15T15:30:01"
     }
   },
   "peak_equity": 102267.54052352905,
-  "consecutive_losses": 5
+  "consecutive_losses": 0
 }

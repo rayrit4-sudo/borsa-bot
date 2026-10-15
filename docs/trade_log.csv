@@ -19,3 +19,5 @@ timestamp,action,ticker,qty,price,commission,reason,pnl,cash_after
 2026-09-30T07:22:17,SELL,TUPRS.IS,34,379.0,19.33,stop-loss (-7.3%),-1060.19,61463.43
 2026-09-30T13:34:43,BUY,WFC,1,3933.3493,5.9,AL sinyali (skor 0.47),,57524.18
 2026-10-13T13:38:27,BUY,ENJSA.IS,60,114.1,10.27,AL sinyali (skor 0.54),,50667.91
+2026-10-15T15:30:01,SELL,NVDA,1,10710.5016,16.07,"trailing-stop (zirve 11805.57 TL, zirveden -9.3%)",101.45,61362.35
+2026-10-15T15:30:01,BUY,XOM,1,8661.1476,12.99,AL sinyali (skor 0.39),,52688.21
