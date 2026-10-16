@@ -1,80 +1,80 @@
 {
-  "date": "2026-10-15",
+  "date": "2026-10-16",
   "discovered": [
     {
-      "ticker": "XOM",
+      "ticker": "CVX",
       "market": "ABD",
-      "composite_score": 0.603
-    },
-    {
-      "ticker": "MU",
-      "market": "ABD",
-      "composite_score": 0.556
+      "composite_score": 0.633
     },
     {
       "ticker": "ABBV",
       "market": "ABD",
-      "composite_score": 0.538
+      "composite_score": 0.577
+    },
+    {
+      "ticker": "BRK-B",
+      "market": "ABD",
+      "composite_score": 0.563
+    },
+    {
+      "ticker": "MU",
+      "market": "ABD",
+      "composite_score": 0.543
     },
     {
       "ticker": "GS",
       "market": "ABD",
-      "composite_score": 0.532
+      "composite_score": 0.502
     },
     {
-      "ticker": "ASTOR.IS",
-      "market": "BIST",
-      "composite_score": 0.486
-    },
-    {
-      "ticker": "AGHOL.IS",
-      "market": "BIST",
-      "composite_score": 0.48
-    },
-    {
-      "ticker": "CVX",
+      "ticker": "XOM",
       "market": "ABD",
-      "composite_score": 0.462
+      "composite_score": 0.463
     },
     {
-      "ticker": "WFC",
+      "ticker": "AMD",
       "market": "ABD",
-      "composite_score": 0.444
+      "composite_score": 0.459
     },
     {
-      "ticker": "V",
+      "ticker": "CSCO",
       "market": "ABD",
-      "composite_score": 0.44
+      "composite_score": 0.41
+    },
+    {
+      "ticker": "WMT",
+      "market": "ABD",
+      "composite_score": 0.407
     },
     {
       "ticker": "SELEC.IS",
       "market": "BIST",
-      "composite_score": 0.406
-    },
-    {
-      "ticker": "AKCNS.IS",
-      "market": "BIST",
-      "composite_score": 0.347
-    },
-    {
-      "ticker": "ISDMR.IS",
-      "market": "BIST",
-      "composite_score": 0.347
+      "composite_score": 0.4
     },
     {
       "ticker": "SOKM.IS",
       "market": "BIST",
-      "composite_score": 0.344
+      "composite_score": 0.384
+    },
+    {
+      "ticker": "ISDMR.IS",
+      "market": "BIST",
+      "composite_score": 0.364
+    },
+    {
+      "ticker": "TXN",
+      "market": "ABD",
+      "composite_score": 0.336
     },
     {
       "ticker": "TKFEN.IS",
       "market": "BIST",
-      "composite_score": 0.343
+      "composite_score": 0.328
     },
     {
-      "ticker": "NOW",
+      "ticker": "CRM",
       "market": "ABD",
-      "composite_score": 0.285
+      "composite_score": 0.319
     }
   ]
 }
