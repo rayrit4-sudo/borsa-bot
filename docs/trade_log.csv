@@ -21,3 +21,4 @@ timestamp,action,ticker,qty,price,commission,reason,pnl,cash_after
 2026-10-13T13:38:27,BUY,ENJSA.IS,60,114.1,10.27,AL sinyali (skor 0.54),,50667.91
 2026-10-15T15:30:01,SELL,NVDA,1,10710.5016,16.07,"trailing-stop (zirve 11805.57 TL, zirveden -9.3%)",101.45,61362.35
 2026-10-15T15:30:01,BUY,XOM,1,8661.1476,12.99,AL sinyali (skor 0.39),,52688.21
+2026-10-16T10:46:07,SELL,BIMAS.IS,33,383.75,19.0,stop-loss (-7.9%),-1120.36,65332.96

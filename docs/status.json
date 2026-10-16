@@ -1,17 +1,17 @@
 {
-  "last_updated": "2026-10-15T22:34:23+00:00",
+  "last_updated": "2026-10-16T10:46:07+00:00",
   "market_status": {
-    "bist_open": false,
+    "bist_open": true,
     "us_open": false
   },
-  "note": "Piyasalar kapalı — fiyatlar güncellenmedi.",
-  "cash": 52688.21,
-  "total_value": 96251.74,
+  "note": null,
+  "cash": 65332.96,
+  "total_value": 94863.99,
   "initial_cash": 100000.0,
-  "return_pct": -3.75,
+  "return_pct": -5.14,
   "peak_equity": 102267.54,
-  "drawdown_pct": -5.88,
-  "consecutive_losses": 0,
+  "drawdown_pct": -7.24,
+  "consecutive_losses": 1,
   "positions": [
     {
       "ticker": "CVX",
@@ -23,17 +23,6 @@
       "current_price": 10378.54,
       "unrealized_pct": 0.0,
       "entry_native_price": 214.03500366210938
-    },
-    {
-      "ticker": "BIMAS.IS",
-      "sector": "Consumer Defensive",
-      "market": "BIST",
-      "currency": "TRY",
-      "qty": 33,
-      "avg_price": 416.5,
-      "current_price": 416.5,
-      "unrealized_pct": 0.0,
-      "entry_native_price": 416.5
     },
     {
       "ticker": "WFC",
@@ -53,8 +42,8 @@
       "currency": "TRY",
       "qty": 60,
       "avg_price": 114.1,
-      "current_price": 114.1,
-      "unrealized_pct": 0.0,
+      "current_price": 109.3,
+      "unrealized_pct": -4.21,
       "entry_native_price": 114.0999984741211
     },
     {

@@ -1,5 +1,5 @@
 {
-  "cash": 52688.20631340488,
+  "cash": 65332.960688404884,
   "positions": {
     "CVX": {
       "qty": 1,
@@ -11,17 +11,6 @@
       "peak_price": 10971.36604568665,
       "cost_basis": 10394.103445363115,
       "opened_at": "2026-09-10T13:44:44"
-    },
-    "BIMAS.IS": {
-      "qty": 33,
-      "avg_price": 416.5,
-      "sector": "Consumer Defensive",
-      "market": "BIST",
-      "currency": "TRY",
-      "entry_native_price": 416.5,
-      "peak_price": 438.25,
-      "cost_basis": 13765.11675,
-      "opened_at": "2026-09-16T07:31:30"
     },
     "WFC": {
       "qty": 1,
@@ -58,5 +47,5 @@
     }
   },
   "peak_equity": 102267.54052352905,
-  "consecutive_losses": 0
+  "consecutive_losses": 1
 }
