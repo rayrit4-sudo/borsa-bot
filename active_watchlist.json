@@ -1,80 +1,80 @@
 {
-  "date": "2026-10-20",
+  "date": "2026-10-21",
   "discovered": [
     {
       "ticker": "CVX",
       "market": "ABD",
-      "composite_score": 0.608
-    },
-    {
-      "ticker": "XOM",
-      "market": "ABD",
-      "composite_score": 0.602
-    },
-    {
-      "ticker": "ABBV",
-      "market": "ABD",
-      "composite_score": 0.549
+      "composite_score": 0.61
     },
     {
       "ticker": "BRK-B",
       "market": "ABD",
-      "composite_score": 0.487
-    },
-    {
-      "ticker": "GS",
-      "market": "ABD",
-      "composite_score": 0.483
+      "composite_score": 0.491
     },
     {
       "ticker": "AMD",
       "market": "ABD",
-      "composite_score": 0.479
+      "composite_score": 0.482
     },
     {
-      "ticker": "COST",
+      "ticker": "XOM",
       "market": "ABD",
-      "composite_score": 0.45
-    },
-    {
-      "ticker": "MU",
-      "market": "ABD",
-      "composite_score": 0.447
+      "composite_score": 0.452
     },
     {
       "ticker": "KO",
       "market": "ABD",
-      "composite_score": 0.446
+      "composite_score": 0.448
+    },
+    {
+      "ticker": "COST",
+      "market": "ABD",
+      "composite_score": 0.445
+    },
+    {
+      "ticker": "V",
+      "market": "ABD",
+      "composite_score": 0.436
     },
     {
       "ticker": "JPM",
       "market": "ABD",
-      "composite_score": 0.435
+      "composite_score": 0.425
+    },
+    {
+      "ticker": "LLY",
+      "market": "ABD",
+      "composite_score": 0.417
     },
     {
       "ticker": "WMT",
       "market": "ABD",
-      "composite_score": 0.407
+      "composite_score": 0.411
     },
     {
       "ticker": "PANW",
       "market": "ABD",
+      "composite_score": 0.41
+    },
+    {
+      "ticker": "GS",
+      "market": "ABD",
       "composite_score": 0.402
+    },
+    {
+      "ticker": "ABBV",
+      "market": "ABD",
+      "composite_score": 0.387
     },
     {
       "ticker": "SELEC.IS",
       "market": "BIST",
-      "composite_score": 0.385
+      "composite_score": 0.363
     },
     {
-      "ticker": "WFC",
+      "ticker": "TMO",
       "market": "ABD",
-      "composite_score": 0.375
-    },
-    {
-      "ticker": "ISDMR.IS",
-      "market": "BIST",
-      "composite_score": 0.372
+      "composite_score": 0.36
     }
   ]
 }
