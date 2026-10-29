@@ -1,35 +1,40 @@
 {
-  "date": "2026-10-28",
+  "date": "2026-10-29",
   "discovered": [
     {
       "ticker": "CVX",
       "market": "ABD",
-      "composite_score": 0.629
+      "composite_score": 0.622
     },
     {
-      "ticker": "XOM",
+      "ticker": "V",
       "market": "ABD",
-      "composite_score": 0.628
-    },
-    {
-      "ticker": "LLY",
-      "market": "ABD",
-      "composite_score": 0.549
+      "composite_score": 0.521
     },
     {
       "ticker": "KO",
       "market": "ABD",
-      "composite_score": 0.512
+      "composite_score": 0.503
     },
     {
-      "ticker": "PANW",
+      "ticker": "COST",
       "market": "ABD",
-      "composite_score": 0.504
+      "composite_score": 0.497
+    },
+    {
+      "ticker": "TXN",
+      "market": "ABD",
+      "composite_score": 0.483
+    },
+    {
+      "ticker": "XOM",
+      "market": "ABD",
+      "composite_score": 0.464
     },
     {
       "ticker": "MA",
       "market": "ABD",
-      "composite_score": 0.461
+      "composite_score": 0.458
     },
     {
       "ticker": "CIMSA.IS",
@@ -39,25 +44,25 @@
     {
       "ticker": "WMT",
       "market": "ABD",
-      "composite_score": 0.425
+      "composite_score": 0.435
     },
     {
-      "ticker": "BRK-B",
+      "ticker": "LMT",
       "market": "ABD",
-      "composite_score": 0.42
+      "composite_score": 0.424
     },
     {
-      "ticker": "JPM",
-      "market": "ABD",
-      "composite_score": 0.414
+      "ticker": "ASTOR.IS",
+      "market": "BIST",
+      "composite_score": 0.424
     },
     {
       "ticker": "ABBV",
       "market": "ABD",
-      "composite_score": 0.404
+      "composite_score": 0.408
     },
     {
-      "ticker": "HON",
+      "ticker": "PG",
       "market": "ABD",
       "composite_score": 0.381
     },
@@ -67,14 +72,9 @@
       "composite_score": 0.38
     },
     {
-      "ticker": "SELEC.IS",
-      "market": "BIST",
-      "composite_score": 0.379
-    },
-    {
-      "ticker": "ASTOR.IS",
-      "market": "BIST",
-      "composite_score": 0.379
+      "ticker": "PANW",
+      "market": "ABD",
+      "composite_score": 0.368
     }
   ]
 }
