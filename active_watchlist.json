@@ -1,80 +1,80 @@
 {
-  "date": "2026-10-29",
+  "date": "2026-10-30",
   "discovered": [
     {
       "ticker": "CVX",
       "market": "ABD",
-      "composite_score": 0.622
-    },
-    {
-      "ticker": "V",
-      "market": "ABD",
-      "composite_score": 0.521
-    },
-    {
-      "ticker": "KO",
-      "market": "ABD",
-      "composite_score": 0.503
-    },
-    {
-      "ticker": "COST",
-      "market": "ABD",
-      "composite_score": 0.497
-    },
-    {
-      "ticker": "TXN",
-      "market": "ABD",
-      "composite_score": 0.483
+      "composite_score": 0.612
     },
     {
       "ticker": "XOM",
       "market": "ABD",
-      "composite_score": 0.464
+      "composite_score": 0.605
     },
     {
-      "ticker": "MA",
+      "ticker": "PANW",
       "market": "ABD",
-      "composite_score": 0.458
+      "composite_score": 0.542
+    },
+    {
+      "ticker": "MU",
+      "market": "ABD",
+      "composite_score": 0.513
+    },
+    {
+      "ticker": "V",
+      "market": "ABD",
+      "composite_score": 0.492
+    },
+    {
+      "ticker": "IBM",
+      "market": "ABD",
+      "composite_score": 0.49
+    },
+    {
+      "ticker": "TXN",
+      "market": "ABD",
+      "composite_score": 0.486
     },
     {
       "ticker": "CIMSA.IS",
       "market": "BIST",
-      "composite_score": 0.44
+      "composite_score": 0.453
     },
     {
-      "ticker": "WMT",
+      "ticker": "LLY",
+      "market": "ABD",
+      "composite_score": 0.446
+    },
+    {
+      "ticker": "ABBV",
+      "market": "ABD",
+      "composite_score": 0.437
+    },
+    {
+      "ticker": "BRK-B",
       "market": "ABD",
       "composite_score": 0.435
     },
     {
       "ticker": "LMT",
       "market": "ABD",
-      "composite_score": 0.424
+      "composite_score": 0.431
     },
     {
       "ticker": "ASTOR.IS",
       "market": "BIST",
-      "composite_score": 0.424
+      "composite_score": 0.431
     },
     {
-      "ticker": "ABBV",
+      "ticker": "QCOM",
       "market": "ABD",
-      "composite_score": 0.408
+      "composite_score": 0.414
     },
     {
-      "ticker": "PG",
+      "ticker": "MA",
       "market": "ABD",
-      "composite_score": 0.381
-    },
-    {
-      "ticker": "INDES.IS",
-      "market": "BIST",
-      "composite_score": 0.38
-    },
-    {
-      "ticker": "PANW",
-      "market": "ABD",
-      "composite_score": 0.368
+      "composite_score": 0.413
     }
   ]
 }
