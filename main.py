@@ -263,9 +263,10 @@ def main() -> None:
                     log.info("ATLANDI (açılış aralığı kırılımı yok): %s — %s", r["ticker"], why)
                     continue
                 log.info("ORB teyidi alındı: %s — %s", r["ticker"], why)
+            setup = "ABD-ORB" if r["market"] == "ABD" and config.US_REQUIRE_ORB_CONFIRMATION else f"{r['market']}-teknik"
             broker.buy(
                 r["ticker"], r["last_price"], r["sector"], r["market"], r["currency"], r["native_price"],
-                current_prices, reason=f"AL sinyali (skor {r['composite_score']:.2f})",
+                current_prices, reason=f"AL sinyali (skor {r['composite_score']:.2f})", setup=setup,
             )
 
     broker.update_peak_equity(current_prices)

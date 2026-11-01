@@ -241,6 +241,9 @@
   <div class="empty">Yükleniyor…</div>
 </div>
 
+<h2>Hangi Kural Kazandırıyor?</h2>
+<div class="card"><details><summary style="cursor:pointer;color:var(--text-dim);font-size:13.5px">Göster / gizle</summary><div id="statsBox"><div class="empty">Henüz kapanmış işlem yok.</div></div></details></div>
+
 <footer>
   <span><a href="https://github.com/rayrit4-sudo/borsa-bot" target="_blank">GitHub reposu →</a></span>
   <span>15 dakikada bir otomatik güncellenir · sadece kağıt (sanal) işlem</span>
@@ -437,11 +440,26 @@ async function loadHistory() {
   } catch (e) { /* grafik olmadan devam */ }
 }
 
+async function loadStats() {
+  try {
+    const res = await fetch("signal_stats.json?t=" + Date.now());
+    if (!res.ok) return;
+    const d = await res.json();
+    const rows = Object.entries(d.setups || {});
+    if (!rows.length) return;
+    document.getElementById("statsBox").innerHTML = rows.map(([k, s]) =>
+      `<div style="padding:10px 0;border-bottom:1px solid var(--border,#2223)"><b>${k}</b><br>` +
+      `<span class="mono">${s.n} işlem · %${s.win_rate} kazanç · ort. ${s.avg_pct}% · büyüklük x${s.multiplier}</span>` +
+      (s.n < d.min_trades ? `<br><span style="color:var(--text-dim);font-size:12px">${d.min_trades - s.n} işlem sonra öğrenmeye başlar</span>` : "") +
+      `</div>`).join("");
+  } catch (e) {}
+}
+
 async function loadAll(userTriggered = false) {
   const btn = document.getElementById("refreshBtn");
   if (userTriggered) btn.classList.add("spinning");
   try {
-    await Promise.all([loadStatus(), loadTrades(), loadHistory()]);
+    await Promise.all([loadStatus(), loadTrades(), loadHistory(), loadStats()]);
   } catch (e) {
     document.getElementById("noteBox").innerHTML = '<div class="note">⚠️ Veri yüklenemedi. Az sonra tekrar dene.</div>';
   }

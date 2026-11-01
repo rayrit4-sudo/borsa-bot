@@ -188,6 +188,18 @@ STATUS_FILE = "docs/status.json"  # telefon gösterge paneli (GitHub Pages) bunu
 HISTORY_FILE = "docs/history.json"  # panel grafiği için portföy değeri geçmişi
 HISTORY_MAX_POINTS = 500
 
+# --- Kendini ölçen bot (işlem günlüğü) ---
+# Her kapanan işlem, hangi kuralla alındığıyla birlikte kaydedilir. Bir kuralın
+# JOURNAL_MIN_TRADES kapanmış işlemi birikince, ortalama sonucuna göre o kuralın
+# pozisyon büyüklüğü otomatik büyür veya küçülür. Daha az işlemde değişiklik yok.
+JOURNAL_FILE = "docs/signal_journal.json"
+SIGNAL_STATS_FILE = "docs/signal_stats.json"
+JOURNAL_MIN_TRADES = 30
+JOURNAL_GOOD_AVG_PCT = 0.5    # işlem başına ortalama bu % veya üstü -> büyüt
+JOURNAL_BAD_AVG_PCT = -0.5    # bu % veya altı -> küçült
+JOURNAL_BOOST = 1.25
+JOURNAL_CUT = 0.5
+
 # --- Haber duyarlılığı ---
 NEWS_LOOKBACK_COUNT = 12      # ticker başına kontrol edilecek haber başlığı sayısı
 NEWS_TIMEOUT_SECONDS = 6

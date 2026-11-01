@@ -24,6 +24,7 @@ import os
 from datetime import datetime
 
 import config
+from strategy import journal
 
 log = logging.getLogger(__name__)
 
@@ -135,6 +136,7 @@ class PaperBroker:
     def buy(
         self, ticker: str, price: float, sector: str, market: str, currency: str,
         native_price: float, current_prices: dict[str, float], reason: str = "AL sinyali",
+        setup: str = "bilinmiyor",
     ) -> bool:
         if ticker in self.positions:
             return False
@@ -155,7 +157,8 @@ class PaperBroker:
             if self.consecutive_losses >= config.CONSECUTIVE_LOSS_COOLDOWN
             else 1.0
         )
-        risk_amount = equity * config.RISK_PER_TRADE_PCT * risk_multiplier
+        setup_multiplier = journal.size_multiplier(setup)
+        risk_amount = equity * config.RISK_PER_TRADE_PCT * risk_multiplier * setup_multiplier
         stop_distance = price * config.STOP_LOSS_PCT
         if stop_distance <= 0:
             return False
@@ -182,6 +185,7 @@ class PaperBroker:
             "entry_native_price": native_price,
             "peak_price": price,
             "cost_basis": total_cost,
+            "setup": setup,
             "opened_at": datetime.now().isoformat(timespec="seconds"),
         }
         self._log_trade("BUY", ticker, qty, price, reason, commission=commission)
@@ -204,6 +208,7 @@ class PaperBroker:
         self.cash += net_proceeds
         self.consecutive_losses = self.consecutive_losses + 1 if pnl < 0 else 0
         del self.positions[ticker]
+        journal.record_close(ticker, position.get("setup", "bilinmiyor"), pnl, cost_basis)
         self._log_trade("SELL", ticker, qty, price, reason, commission=commission, pnl=pnl)
         log.info("SATILDI: %s x%d @ %.2f (net PnL: %.2f TL) — sebep: %s", ticker, qty, price, pnl, reason)
         return True
