@@ -88,6 +88,25 @@ WEIGHT_LONG_TERM = 0.20
 BUY_THRESHOLD = 0.35
 SELL_THRESHOLD = -0.25
 
+# 10-16 Eylül 2026 arası gün içi sistemde alınan ilk 3 pozisyon (AKBNK, GUBRF,
+# TAVHL) hepsi stop-loss'a çarptı. İncelemede sebep bulundu: bileşik skoru
+# eşiğin üstüne taşıyan şey neredeyse tamamen TEMEL ve UZUN VADELİ skorlardı
+# (ör. AKBNK: teknik 0.05, temel 0.92, uzun vadeli 1.00) — bunlar günde bir kez
+# hesaplanıp önbellekten okunduğu için gün içi fiyat hareketini yansıtmıyor.
+# Yani bot, gerçek bir gün içi momentum teyidi OLMADAN, sırf "uzun vadede iyi
+# hisse" diye alım yapıyordu; giriş zamanlaması rastgele kalıp hemen tersine
+# dönüyordu. Bu yüzden AL sinyalinde artık teknik skor için de ayrı bir taban
+# aranıyor (bkz. main.py) — temel/uzun vadeli ne kadar güçlü olursa olsun, o
+# an gerçek bir teknik teyit (MA + MACD'nin en azından çelişmediği) yoksa alım
+# yapılmaz.
+MIN_TECHNICAL_FOR_ENTRY = 0.15
+# Not: bu taban sadece BIST için geçerli. ABD'de aynı işi açılış aralığı kırılımı teyidi yapar (aşağıda).
+
+# --- Day-trader-skill entegrasyonu: ABD için açılış aralığı kırılımı teyidi ---
+# True ise ABD hissesine AL sinyali gelse bile, hisse günün ilk 15 dakikalık
+# aralığının üstünde bir 5dk mum kapatmadan alınmaz (bkz. strategy/orb_confirm.py).
+US_REQUIRE_ORB_CONFIRMATION = True
+
 # --- Piyasa rejimi filtresi ---
 # İlgili piyasanın kendi endeksi teknik olarak "ayı" bölgesindeyse, o piyasadan
 # yeni pozisyon açılmaz — sadece mevcut pozisyonlardaki stop-loss/trailing-stop/

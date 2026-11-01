@@ -33,6 +33,7 @@ import market_hours
 from data_sources import price_data
 from portfolio.paper_broker import PaperBroker
 from strategy import discovery, slow_scores
+from strategy.orb_confirm import orb_confirmed
 from strategy.scorer import market_regime, rank_watchlist_intraday
 
 if sys.stdout.encoding is None or sys.stdout.encoding.lower() != "utf-8":
@@ -250,6 +251,18 @@ def main() -> None:
                 break
             if regime_by_market.get(r["market"], 0.0) <= config.MARKET_REGIME_BEARISH_THRESHOLD:
                 continue  # bu piyasa ayı trendinde, yeni alım yapılmıyor
+            if r["market"] == "BIST" and r["technical_score"] < config.MIN_TECHNICAL_FOR_ENTRY:
+                log.info(
+                    "ATLANDI (gün içi teknik teyit yok): %s (teknik %.2f < taban %.2f, bileşik %.2f temel/uzun-vadeli ile şişmiş olabilir)",
+                    r["ticker"], r["technical_score"], config.MIN_TECHNICAL_FOR_ENTRY, r["composite_score"],
+                )
+                continue
+            if r["market"] == "ABD" and config.US_REQUIRE_ORB_CONFIRMATION:
+                ok, why = orb_confirmed(r["ticker"])
+                if not ok:
+                    log.info("ATLANDI (açılış aralığı kırılımı yok): %s — %s", r["ticker"], why)
+                    continue
+                log.info("ORB teyidi alındı: %s — %s", r["ticker"], why)
             broker.buy(
                 r["ticker"], r["last_price"], r["sector"], r["market"], r["currency"], r["native_price"],
                 current_prices, reason=f"AL sinyali (skor {r['composite_score']:.2f})",
