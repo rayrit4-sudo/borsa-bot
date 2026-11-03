@@ -1,80 +1,80 @@
 {
-  "date": "2026-11-02",
+  "date": "2026-11-03",
   "discovered": [
     {
       "ticker": "CVX",
       "market": "ABD",
-      "composite_score": 0.682
+      "composite_score": 0.704
     },
     {
       "ticker": "XOM",
       "market": "ABD",
-      "composite_score": 0.66
+      "composite_score": 0.686
     },
     {
       "ticker": "ABBV",
       "market": "ABD",
-      "composite_score": 0.593
-    },
-    {
-      "ticker": "LLY",
-      "market": "ABD",
-      "composite_score": 0.519
-    },
-    {
-      "ticker": "BRK-B",
-      "market": "ABD",
-      "composite_score": 0.497
+      "composite_score": 0.553
     },
     {
       "ticker": "IBM",
       "market": "ABD",
-      "composite_score": 0.496
+      "composite_score": 0.528
+    },
+    {
+      "ticker": "TXN",
+      "market": "ABD",
+      "composite_score": 0.519
     },
     {
       "ticker": "V",
       "market": "ABD",
-      "composite_score": 0.487
-    },
-    {
-      "ticker": "KO",
-      "market": "ABD",
-      "composite_score": 0.466
-    },
-    {
-      "ticker": "CSCO",
-      "market": "ABD",
-      "composite_score": 0.462
+      "composite_score": 0.492
     },
     {
       "ticker": "CIMSA.IS",
       "market": "BIST",
-      "composite_score": 0.452
+      "composite_score": 0.458
+    },
+    {
+      "ticker": "KO",
+      "market": "ABD",
+      "composite_score": 0.451
+    },
+    {
+      "ticker": "LLY",
+      "market": "ABD",
+      "composite_score": 0.444
     },
     {
       "ticker": "LMT",
       "market": "ABD",
-      "composite_score": 0.431
+      "composite_score": 0.43
     },
     {
       "ticker": "TSKB.IS",
       "market": "BIST",
-      "composite_score": 0.423
+      "composite_score": 0.413
     },
     {
-      "ticker": "INDES.IS",
+      "ticker": "ASTOR.IS",
       "market": "BIST",
-      "composite_score": 0.392
+      "composite_score": 0.378
     },
     {
-      "ticker": "SELEC.IS",
-      "market": "BIST",
-      "composite_score": 0.374
-    },
-    {
-      "ticker": "PANW",
+      "ticker": "AMD",
       "market": "ABD",
-      "composite_score": 0.374
+      "composite_score": 0.358
+    },
+    {
+      "ticker": "BRK-B",
+      "market": "ABD",
+      "composite_score": 0.346
+    },
+    {
+      "ticker": "MS",
+      "market": "ABD",
+      "composite_score": 0.345
     }
   ]
 }
