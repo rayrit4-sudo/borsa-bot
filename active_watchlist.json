@@ -1,80 +1,80 @@
 {
-  "date": "2026-11-03",
+  "date": "2026-11-04",
   "discovered": [
     {
-      "ticker": "CVX",
+      "ticker": "AMD",
       "market": "ABD",
-      "composite_score": 0.704
-    },
-    {
-      "ticker": "XOM",
-      "market": "ABD",
-      "composite_score": 0.686
-    },
-    {
-      "ticker": "ABBV",
-      "market": "ABD",
-      "composite_score": 0.553
-    },
-    {
-      "ticker": "IBM",
-      "market": "ABD",
-      "composite_score": 0.528
-    },
-    {
-      "ticker": "TXN",
-      "market": "ABD",
-      "composite_score": 0.519
-    },
-    {
-      "ticker": "V",
-      "market": "ABD",
-      "composite_score": 0.492
-    },
-    {
-      "ticker": "CIMSA.IS",
-      "market": "BIST",
-      "composite_score": 0.458
-    },
-    {
-      "ticker": "KO",
-      "market": "ABD",
-      "composite_score": 0.451
+      "composite_score": 0.529
     },
     {
       "ticker": "LLY",
       "market": "ABD",
-      "composite_score": 0.444
+      "composite_score": 0.519
+    },
+    {
+      "ticker": "TXN",
+      "market": "ABD",
+      "composite_score": 0.495
+    },
+    {
+      "ticker": "V",
+      "market": "ABD",
+      "composite_score": 0.493
+    },
+    {
+      "ticker": "KO",
+      "market": "ABD",
+      "composite_score": 0.471
     },
     {
       "ticker": "LMT",
       "market": "ABD",
-      "composite_score": 0.43
+      "composite_score": 0.425
     },
     {
-      "ticker": "TSKB.IS",
-      "market": "BIST",
-      "composite_score": 0.413
+      "ticker": "PANW",
+      "market": "ABD",
+      "composite_score": 0.387
     },
     {
       "ticker": "ASTOR.IS",
       "market": "BIST",
-      "composite_score": 0.378
-    },
-    {
-      "ticker": "AMD",
-      "market": "ABD",
-      "composite_score": 0.358
+      "composite_score": 0.356
     },
     {
       "ticker": "BRK-B",
       "market": "ABD",
-      "composite_score": 0.346
+      "composite_score": 0.347
     },
     {
-      "ticker": "MS",
+      "ticker": "COST",
       "market": "ABD",
-      "composite_score": 0.345
+      "composite_score": 0.314
+    },
+    {
+      "ticker": "CSCO",
+      "market": "ABD",
+      "composite_score": 0.313
+    },
+    {
+      "ticker": "CLEBI.IS",
+      "market": "BIST",
+      "composite_score": 0.311
+    },
+    {
+      "ticker": "WMT",
+      "market": "ABD",
+      "composite_score": 0.264
+    },
+    {
+      "ticker": "IBM",
+      "market": "ABD",
+      "composite_score": 0.246
+    },
+    {
+      "ticker": "INTU",
+      "market": "ABD",
+      "composite_score": 0.242
     }
   ]
 }
