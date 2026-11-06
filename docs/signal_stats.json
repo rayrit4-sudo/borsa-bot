@@ -1,0 +1,16 @@
+{
+  "min_trades": 30,
+  "setups": {
+    "bilinmiyor": {
+      "n": 2,
+      "wins": 1,
+      "sum_pct": -1.03,
+      "gross_win": 305.33,
+      "gross_loss": 344.23,
+      "win_rate": 50.0,
+      "avg_pct": -0.52,
+      "profit_factor": 0.89,
+      "multiplier": 1.0
+    }
+  }
+}

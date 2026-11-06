@@ -22,3 +22,5 @@ timestamp,action,ticker,qty,price,commission,reason,pnl,cash_after
 2026-10-15T15:30:01,SELL,NVDA,1,10710.5016,16.07,"trailing-stop (zirve 11805.57 TL, zirveden -9.3%)",101.45,61362.35
 2026-10-15T15:30:01,BUY,XOM,1,8661.1476,12.99,AL sinyali (skor 0.39),,52688.21
 2026-10-16T10:46:07,SELL,BIMAS.IS,33,383.75,19.0,stop-loss (-7.9%),-1120.36,65332.96
+2026-11-06T20:15:40,SELL,CVX,1,10715.5075,16.07,"trailing-stop (zirve 11733.42 TL, zirveden -8.7%)",305.33,76032.39
+2026-11-06T20:15:40,SELL,XOM,1,8342.4194,12.51,"trailing-stop (zirve 9318.07 TL, zirveden -10.5%)",-344.23,84362.3

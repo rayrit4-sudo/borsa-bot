@@ -1,29 +1,18 @@
 {
-  "last_updated": "2026-10-30T22:12:23+00:00",
+  "last_updated": "2026-11-06T20:15:40+00:00",
   "market_status": {
     "bist_open": false,
-    "us_open": false
+    "us_open": true
   },
-  "note": "Piyasalar kapalı — fiyatlar güncellenmedi.",
-  "cash": 65332.96,
-  "total_value": 95151.99,
+  "note": null,
+  "cash": 84362.3,
+  "total_value": 95141.65,
   "initial_cash": 100000.0,
-  "return_pct": -4.85,
+  "return_pct": -4.86,
   "peak_equity": 102267.54,
-  "drawdown_pct": -6.96,
+  "drawdown_pct": -6.97,
   "consecutive_losses": 1,
   "positions": [
-    {
-      "ticker": "CVX",
-      "sector": "Energy",
-      "market": "ABD",
-      "currency": "USD",
-      "qty": 1,
-      "avg_price": 10378.54,
-      "current_price": 10378.54,
-      "unrealized_pct": 0.0,
-      "entry_native_price": 214.03500366210938
-    },
     {
       "ticker": "WFC",
       "sector": "Financial Services",
@@ -45,17 +34,6 @@
       "current_price": 114.1,
       "unrealized_pct": 0.0,
       "entry_native_price": 114.0999984741211
-    },
-    {
-      "ticker": "XOM",
-      "sector": "Energy",
-      "market": "ABD",
-      "currency": "USD",
-      "qty": 1,
-      "avg_price": 8661.15,
-      "current_price": 8661.15,
-      "unrealized_pct": 0.0,
-      "entry_native_price": 175.28500366210938
     }
   ]
 }
