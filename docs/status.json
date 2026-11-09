@@ -1,10 +1,10 @@
 {
-  "last_updated": "2026-11-07T00:08:32+00:00",
+  "last_updated": "2026-11-09T15:16:15+00:00",
   "market_status": {
     "bist_open": false,
-    "us_open": false
+    "us_open": true
   },
-  "note": "Piyasalar kapalı — fiyatlar güncellenmedi.",
+  "note": null,
   "cash": 84362.3,
   "total_value": 95141.65,
   "initial_cash": 100000.0,
