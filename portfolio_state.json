@@ -1,5 +1,5 @@
 {
-  "cash": 84362.30076004281,
+  "cash": 57480.2878752543,
   "positions": {
     "WFC": {
       "qty": 1,
@@ -19,9 +19,33 @@
       "market": "BIST",
       "currency": "TRY",
       "entry_native_price": 114.0999984741211,
-      "peak_price": 116.5999984741211,
+      "peak_price": 118.9000015258789,
       "cost_basis": 6856.268908309937,
       "opened_at": "2026-10-13T13:38:27"
+    },
+    "BIMAS.IS": {
+      "qty": 35,
+      "avg_price": 381.25,
+      "sector": "Consumer Defensive",
+      "market": "BIST",
+      "currency": "TRY",
+      "entry_native_price": 381.25,
+      "peak_price": 381.25,
+      "cost_basis": 13363.765625,
+      "setup": "BIST-teknik",
+      "opened_at": "2026-11-10T14:23:35"
+    },
+    "ASTOR.IS": {
+      "qty": 85,
+      "avg_price": 158.8000030517578,
+      "sector": "Industrials",
+      "market": "BIST",
+      "currency": "TRY",
+      "entry_native_price": 158.8000030517578,
+      "peak_price": 158.8000030517578,
+      "cost_basis": 13518.247259788513,
+      "setup": "BIST-teknik",
+      "opened_at": "2026-11-10T14:23:35"
     }
   },
   "peak_equity": 102267.54052352905,
