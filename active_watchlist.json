@@ -1,35 +1,40 @@
 {
-  "date": "2026-11-11",
+  "date": "2026-11-12",
   "discovered": [
     {
-      "ticker": "XOM",
+      "ticker": "TXN",
       "market": "ABD",
-      "composite_score": 0.588
+      "composite_score": 0.542
     },
     {
-      "ticker": "LLY",
+      "ticker": "AXP",
       "market": "ABD",
-      "composite_score": 0.519
-    },
-    {
-      "ticker": "WMT",
-      "market": "ABD",
-      "composite_score": 0.439
-    },
-    {
-      "ticker": "BRK-B",
-      "market": "ABD",
-      "composite_score": 0.433
+      "composite_score": 0.468
     },
     {
       "ticker": "CVX",
       "market": "ABD",
-      "composite_score": 0.413
+      "composite_score": 0.44
+    },
+    {
+      "ticker": "BRK-B",
+      "market": "ABD",
+      "composite_score": 0.412
+    },
+    {
+      "ticker": "DOHOL.IS",
+      "market": "BIST",
+      "composite_score": 0.407
+    },
+    {
+      "ticker": "XOM",
+      "market": "ABD",
+      "composite_score": 0.404
     },
     {
       "ticker": "MCD",
       "market": "ABD",
-      "composite_score": 0.391
+      "composite_score": 0.4
     },
     {
       "ticker": "MRK",
@@ -39,42 +44,37 @@
     {
       "ticker": "AGHOL.IS",
       "market": "BIST",
-      "composite_score": 0.381
-    },
-    {
-      "ticker": "MA",
-      "market": "ABD",
-      "composite_score": 0.369
-    },
-    {
-      "ticker": "V",
-      "market": "ABD",
-      "composite_score": 0.368
+      "composite_score": 0.375
     },
     {
       "ticker": "COST",
       "market": "ABD",
-      "composite_score": 0.346
-    },
-    {
-      "ticker": "ISGYO.IS",
-      "market": "BIST",
-      "composite_score": 0.336
-    },
-    {
-      "ticker": "JNJ",
-      "market": "ABD",
-      "composite_score": 0.329
-    },
-    {
-      "ticker": "KO",
-      "market": "ABD",
-      "composite_score": 0.297
+      "composite_score": 0.374
     },
     {
       "ticker": "PG",
       "market": "ABD",
-      "composite_score": 0.265
+      "composite_score": 0.352
+    },
+    {
+      "ticker": "V",
+      "market": "ABD",
+      "composite_score": 0.351
+    },
+    {
+      "ticker": "LLY",
+      "market": "ABD",
+      "composite_score": 0.331
+    },
+    {
+      "ticker": "JNJ",
+      "market": "ABD",
+      "composite_score": 0.315
+    },
+    {
+      "ticker": "KO",
+      "market": "ABD",
+      "composite_score": 0.29
     }
   ]
 }
