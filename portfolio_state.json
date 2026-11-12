@@ -30,7 +30,7 @@
       "market": "BIST",
       "currency": "TRY",
       "entry_native_price": 381.25,
-      "peak_price": 381.25,
+      "peak_price": 385.75,
       "cost_basis": 13363.765625,
       "setup": "BIST-teknik",
       "opened_at": "2026-11-10T14:23:35"
