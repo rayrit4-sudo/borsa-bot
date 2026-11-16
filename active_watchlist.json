@@ -1,80 +1,80 @@
 {
-  "date": "2026-11-13",
+  "date": "2026-11-16",
   "discovered": [
     {
-      "ticker": "TXN",
+      "ticker": "JPM",
       "market": "ABD",
-      "composite_score": 0.531
+      "composite_score": 0.635
     },
     {
-      "ticker": "CVX",
-      "market": "ABD",
-      "composite_score": 0.524
+      "ticker": "RYSAS.IS",
+      "market": "BIST",
+      "composite_score": 0.558
     },
     {
       "ticker": "TRGYO.IS",
       "market": "BIST",
-      "composite_score": 0.521
+      "composite_score": 0.522
     },
     {
-      "ticker": "COST",
+      "ticker": "CVX",
       "market": "ABD",
-      "composite_score": 0.448
+      "composite_score": 0.518
     },
     {
-      "ticker": "MCD",
+      "ticker": "GE",
       "market": "ABD",
-      "composite_score": 0.413
+      "composite_score": 0.475
     },
     {
-      "ticker": "BRK-B",
+      "ticker": "WFC",
       "market": "ABD",
-      "composite_score": 0.411
+      "composite_score": 0.46
+    },
+    {
+      "ticker": "CAT",
+      "market": "ABD",
+      "composite_score": 0.414
     },
     {
       "ticker": "XOM",
       "market": "ABD",
-      "composite_score": 0.391
-    },
-    {
-      "ticker": "AXP",
-      "market": "ABD",
-      "composite_score": 0.356
-    },
-    {
-      "ticker": "DOHOL.IS",
-      "market": "BIST",
-      "composite_score": 0.332
-    },
-    {
-      "ticker": "AGHOL.IS",
-      "market": "BIST",
-      "composite_score": 0.312
-    },
-    {
-      "ticker": "SBUX",
-      "market": "ABD",
-      "composite_score": 0.255
-    },
-    {
-      "ticker": "BAC",
-      "market": "ABD",
-      "composite_score": 0.251
+      "composite_score": 0.406
     },
     {
       "ticker": "JNJ",
       "market": "ABD",
-      "composite_score": 0.246
+      "composite_score": 0.381
     },
     {
-      "ticker": "MRK",
+      "ticker": "TXN",
       "market": "ABD",
-      "composite_score": 0.242
+      "composite_score": 0.378
     },
     {
       "ticker": "LLY",
       "market": "ABD",
-      "composite_score": 0.229
+      "composite_score": 0.369
+    },
+    {
+      "ticker": "AXP",
+      "market": "ABD",
+      "composite_score": 0.351
+    },
+    {
+      "ticker": "DOHOL.IS",
+      "market": "BIST",
+      "composite_score": 0.34
+    },
+    {
+      "ticker": "MRK",
+      "market": "ABD",
+      "composite_score": 0.302
+    },
+    {
+      "ticker": "COST",
+      "market": "ABD",
+      "composite_score": 0.3
     }
   ]
 }
