@@ -157,6 +157,7 @@ def main() -> None:
 
     # Çekirdek liste + o günün geniş keşif taramasından (discovery.py) gelen
     # adaylar birlikte, sadece o an açık olan piyasa(lar)a ait olanlar taranır.
+    broker = PaperBroker()
     discovered = discovery.load_discovered_tickers()
     all_bist = config.WATCHLIST + [t for t in discovered if price_data.is_bist_ticker(t)]
     all_us = config.US_WATCHLIST + [t for t in discovered if not price_data.is_bist_ticker(t)]
@@ -166,6 +167,11 @@ def main() -> None:
         watchlist += all_bist
     if "ABD" in open_markets:
         watchlist += all_us
+    # Keşif listesinden düşen açık pozisyonlar da fiyatlanmalı ve çıkış kuralları çalışmalı.
+    watchlist = list(dict.fromkeys(watchlist + [
+        ticker for ticker in broker.positions
+        if price_data.market_of(ticker) in open_markets
+    ]))
 
     log.info(
         "Açık piyasa(lar): %s — %d hisse taranıyor (%d keşif adayı dahil)...",
@@ -192,7 +198,6 @@ def main() -> None:
             "değerleme yapılmayacak — mevcut portföy son bilinen haliyle korunuyor.",
             len(results), len(watchlist), coverage * 100, config.MIN_DATA_COVERAGE_PCT * 100,
         )
-        broker = PaperBroker()
         print("\n=== SON BİLİNEN PORTFÖY DURUMU (bugünkü fiyatlarla güncellenmedi) ===")
         print(f"Nakit: {broker.cash:,.2f} TL")
         if broker.positions:
@@ -215,16 +220,18 @@ def main() -> None:
         return "AYI (düşüş trendi)" if score <= config.MARKET_REGIME_BEARISH_THRESHOLD else "normal/yükseliş"
 
     regime_by_market: dict[str, float] = {}
+    regime_available: dict[str, bool] = {}
     if "BIST" in open_markets:
-        bist_regime_score, _ = market_regime(config.BIST_REGIME_INDEX)
+        bist_regime_score, bist_details = market_regime(config.BIST_REGIME_INDEX)
         regime_by_market["BIST"] = bist_regime_score
+        regime_available["BIST"] = not bist_details.get("insufficient_data", False)
         print(f"\nPiyasa rejimi BIST ({config.BIST_REGIME_INDEX}): skor {bist_regime_score:+.2f} -> {regime_label(bist_regime_score)}")
     if "ABD" in open_markets:
-        us_regime_score, _ = market_regime(config.US_REGIME_INDEX)
+        us_regime_score, us_details = market_regime(config.US_REGIME_INDEX)
         regime_by_market["ABD"] = us_regime_score
+        regime_available["ABD"] = not us_details.get("insufficient_data", False)
         print(f"Piyasa rejimi ABD ({config.US_REGIME_INDEX}): skor {us_regime_score:+.2f} -> {regime_label(us_regime_score)}")
 
-    broker = PaperBroker()
     broker.backfill_metadata(by_ticker)
     broker.update_peak_equity(current_prices)
 
@@ -244,11 +251,22 @@ def main() -> None:
         print(f"\nYeni pozisyon açılmıyor: portföy zirveden {drawdown:+.1%} gerilemiş (drawdown kesici aktif)")
     else:
         # AL sinyali olan en güçlü adaylara sanal alım yap (limitler dahilinde)
+        unpriced_positions = {
+            ticker for ticker in broker.positions
+            if price_data.market_of(ticker) in open_markets and ticker not in current_prices
+        }
+        if unpriced_positions:
+            log.warning("Açık pozisyon fiyatı eksik; yeni alım durduruldu: %s", ", ".join(sorted(unpriced_positions)))
         for r in results:
+            if unpriced_positions:
+                break
             if r["signal"] != "AL":
                 continue
             if len(broker.positions) >= config.MAX_OPEN_POSITIONS:
                 break
+            if not regime_available.get(r["market"], False):
+                log.warning("Piyasa endeksi verisi yok; yeni alım atlandı: %s", r["ticker"])
+                continue
             if regime_by_market.get(r["market"], 0.0) <= config.MARKET_REGIME_BEARISH_THRESHOLD:
                 continue  # bu piyasa ayı trendinde, yeni alım yapılmıyor
             if r["market"] == "BIST" and r["technical_score"] < config.MIN_TECHNICAL_FOR_ENTRY:

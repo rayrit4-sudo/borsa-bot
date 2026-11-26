@@ -1,13 +1,13 @@
 """BIST ve ABD piyasalarının şu an açık olup olmadığını belirler.
 
-Not: Resmi tatiller hesaba katılmaz (basit bir yaklaşım) — sadece hafta içi
-gün ve saat aralığına bakılır. Piyasa bir tatil günü kapalıysa bot yine de
-taramaya çalışır; o gün için borsadan veri gelmez, mevcut hata toleransı
-(boş/eksik veri -> o hisse atlanır) zaten bunu güvenle idare eder.
+BIST için hafta içi saatleri, ABD için bilinen tatil ve erken kapanış
+takvimi kullanılır.
 """
 
 from datetime import datetime, time
 from zoneinfo import ZoneInfo
+
+from strategy.orb_entry import NYSE_EARLY_CLOSE, NYSE_HOLIDAYS
 
 BIST_TZ = ZoneInfo("Europe/Istanbul")
 US_TZ = ZoneInfo("America/New_York")
@@ -27,9 +27,10 @@ def is_bist_open(now: datetime | None = None) -> bool:
 
 def is_us_open(now: datetime | None = None) -> bool:
     now = (now or datetime.now(US_TZ)).astimezone(US_TZ)
-    if now.weekday() >= 5:
+    if now.weekday() >= 5 or now.date().isoformat() in NYSE_HOLIDAYS:
         return False
-    return US_OPEN <= now.time() <= US_CLOSE
+    close = time(13, 0) if now.date().isoformat() in NYSE_EARLY_CLOSE else US_CLOSE
+    return US_OPEN <= now.time() < close
 
 
 def open_markets() -> list[str]:

@@ -232,6 +232,10 @@ def analyze_ticker_intraday(ticker: str, slow: dict) -> dict | None:
     df = price_data.fetch_intraday_price_history(ticker)
     if df is None or df.empty:
         return None
+    last_bar = pd.Timestamp(df.index[-1])
+    if last_bar.tzinfo is None or pd.Timestamp.now(tz="UTC") - last_bar.tz_convert("UTC") > pd.Timedelta(minutes=45):
+        log.warning("Gün içi fiyat verisi eski veya saatsiz; işlem dışı bırakıldı: %s", ticker)
+        return None
 
     currency = price_data.currency_of(ticker)
     market = price_data.market_of(ticker)
@@ -257,8 +261,7 @@ def market_regime(index_ticker: str) -> tuple[float, dict]:
     df = price_data.fetch_price_history(index_ticker)
     if df is None or df.empty:
         log.warning(
-            "Piyasa rejimi verisi alınamadı (%s) — bu piyasa için nötr (0.0) varsayılıyor, "
-            "yani ayı-piyasası koruması bu çalıştırmada devre dışı kalabilir.",
+            "Piyasa rejimi verisi alınamadı (%s) — bu piyasa için yeni alım durdurulacak.",
             index_ticker,
         )
         return 0.0, {"insufficient_data": True}
