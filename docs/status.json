@@ -1,16 +1,16 @@
 {
-  "last_updated": "2026-11-25T16:50:23+00:00",
+  "last_updated": "2026-11-26T00:50:32+00:00",
   "market_status": {
     "bist_open": false,
-    "us_open": true
+    "us_open": false
   },
-  "note": null,
+  "note": "Piyasalar kapalı — fiyatlar güncellenmedi.",
   "cash": 57480.29,
-  "total_value": 95197.65,
+  "total_value": 95101.39,
   "initial_cash": 100000.0,
-  "return_pct": -4.8,
+  "return_pct": -4.9,
   "peak_equity": 102267.54,
-  "drawdown_pct": -6.91,
+  "drawdown_pct": -7.01,
   "consecutive_losses": 1,
   "positions": [
     {
@@ -20,8 +20,8 @@
       "currency": "USD",
       "qty": 1,
       "avg_price": 3933.35,
-      "current_price": 4029.61,
-      "unrealized_pct": 2.45,
+      "current_price": 3933.35,
+      "unrealized_pct": 0.0,
       "entry_native_price": 80.25
     },
     {
