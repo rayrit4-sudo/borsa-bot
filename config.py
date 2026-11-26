@@ -100,6 +100,8 @@ SELL_THRESHOLD = -0.25
 # an gerçek bir teknik teyit (MA + MACD'nin en azından çelişmediği) yoksa alım
 # yapılmaz.
 MIN_TECHNICAL_FOR_ENTRY = 0.15
+ENTRY_MIN_RSI = 50
+ENTRY_MAX_RSI = 70
 # Not: bu taban sadece BIST için geçerli. ABD'de aynı işi açılış aralığı kırılımı teyidi yapar (aşağıda).
 
 # --- Day-trader-skill entegrasyonu: ABD için açılış aralığı kırılımı teyidi ---

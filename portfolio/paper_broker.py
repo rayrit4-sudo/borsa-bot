@@ -262,7 +262,7 @@ class PaperBroker:
     def portfolio_value(self, current_prices: dict[str, float]) -> float:
         value = self.cash
         for ticker, pos in self.positions.items():
-            price = current_prices.get(ticker, pos["avg_price"])
+            price = current_prices.get(ticker, pos.get("last_price", pos["avg_price"]))
             value += pos["qty"] * price
         return value
 
@@ -284,7 +284,7 @@ class PaperBroker:
 
         lines.append("Açık pozisyonlar:")
         for ticker, pos in self.positions.items():
-            price = current_prices.get(ticker, pos["avg_price"])
+            price = current_prices.get(ticker, pos.get("last_price", pos["avg_price"]))
             unrealized_pct = (price / pos["avg_price"] - 1) * 100
             peak = pos.get("peak_price", pos["avg_price"])
             trailing_note = " [iz süren stop aktif]" if (peak / pos["avg_price"] - 1) >= config.TRAILING_STOP_ACTIVATION_PCT else ""

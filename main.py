@@ -85,7 +85,7 @@ def write_status(broker: PaperBroker | None, current_prices: dict, open_markets:
         drawdown_pct = (total_value / broker.peak_equity - 1) * 100 if broker.peak_equity else 0.0
         positions = []
         for ticker, pos in broker.positions.items():
-            price = current_prices.get(ticker, pos["avg_price"])
+            price = current_prices.get(ticker, pos.get("last_price", pos["avg_price"]))
             unrealized_pct = (price / pos["avg_price"] - 1) * 100
             positions.append({
                 "ticker": ticker,
@@ -233,6 +233,9 @@ def main() -> None:
         print(f"Piyasa rejimi ABD ({config.US_REGIME_INDEX}): skor {us_regime_score:+.2f} -> {regime_label(us_regime_score)}")
 
     broker.backfill_metadata(by_ticker)
+    for ticker, pos in broker.positions.items():
+        if ticker in current_prices:
+            pos["last_price"] = current_prices[ticker]
     broker.update_peak_equity(current_prices)
 
     # 1) Önce mevcut pozisyonlarda stop-loss / iz süren (trailing) stop kontrolü
@@ -269,12 +272,18 @@ def main() -> None:
                 continue
             if regime_by_market.get(r["market"], 0.0) <= config.MARKET_REGIME_BEARISH_THRESHOLD:
                 continue  # bu piyasa ayı trendinde, yeni alım yapılmıyor
-            if r["market"] == "BIST" and r["technical_score"] < config.MIN_TECHNICAL_FOR_ENTRY:
-                log.info(
-                    "ATLANDI (gün içi teknik teyit yok): %s (teknik %.2f < taban %.2f, bileşik %.2f temel/uzun-vadeli ile şişmiş olabilir)",
-                    r["ticker"], r["technical_score"], config.MIN_TECHNICAL_FOR_ENTRY, r["composite_score"],
+            if r["market"] == "BIST":
+                details = r["technical_details"]
+                trend_confirmed = (
+                    r["technical_score"] >= config.MIN_TECHNICAL_FOR_ENTRY
+                    and r["native_price"] > details.get("sma_long", float("inf"))
+                    and details.get("sma_short", 0) > details.get("sma_long", float("inf"))
+                    and details.get("macd_hist", 0) > 0
+                    and config.ENTRY_MIN_RSI <= (details.get("rsi") or 0) <= config.ENTRY_MAX_RSI
                 )
-                continue
+                if not trend_confirmed:
+                    log.info("ATLANDI (yükseliş teyidi yok): %s", r["ticker"])
+                    continue
             if r["market"] == "ABD" and config.US_REQUIRE_ORB_CONFIRMATION:
                 ok, why = orb_confirmed(r["ticker"])
                 if not ok:
