@@ -10,7 +10,8 @@
       "entry_native_price": 80.25,
       "peak_price": 4326.3736906516715,
       "cost_basis": 3939.2493348412513,
-      "opened_at": "2026-09-30T13:34:43"
+      "opened_at": "2026-09-30T13:34:43",
+      "last_price": 4177.073393524013
     },
     "ENJSA.IS": {
       "qty": 60,
